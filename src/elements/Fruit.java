@@ -1,0 +1,95 @@
+package elements;
+
+import dataStructure.node_data;
+import org.json.JSONObject;
+import utils.Point3D;
+
+import java.util.Collection;
+
+public class Fruit {
+    public Point3D location;
+    private Point3D visualLocation;
+    private double value;
+    private int type;
+    private String img;
+
+    public Fruit(String s) {
+        try
+        {
+            JSONObject Fruits = new JSONObject(s);
+            JSONObject fruit = Fruits.getJSONObject("Fruit");
+            String pos = fruit.getString("pos");
+            this.location = new Point3D(pos);
+            this.visualLocation = null;
+            this.value = fruit.getDouble("value");
+            this.type = fruit.getInt("type");
+         //   this.img
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+    }
+
+
+
+    public Point3D getLocation()
+    {
+        return location;
+    }
+
+    public void setLocation(Point3D location)
+    {
+        this.location = location;
+    }
+
+    public Point3D getVisualLocation()
+    {
+        return visualLocation;
+    }
+
+    public void setVisualLocation(Point3D visualLocation)
+    {
+        this.visualLocation = visualLocation;
+    }
+
+    public double getValue()
+    {
+        return value;
+    }
+
+    public void setValue(double value)
+    {
+        this.value = value;
+    }
+
+    public int getType()
+    {
+        return type;
+    }
+
+    public void setType(int type)
+    {
+        this.type = type;
+    }
+
+    public String getImg()
+    {
+        return img;
+    }
+
+    public void setImg(String img)
+    {
+        this.img = img;
+    }
+
+    public String toString() {
+        return this.toJSON();
+    }
+
+    public String toJSON() {
+
+        String ans = "{\"Fruit\":{\"value\":" + this.value + "," + "\"type\":" + type + "," + "\"pos\":\"" + this.location.toString() + "\"" + "}" + "}";
+        return ans;
+    }
+}
