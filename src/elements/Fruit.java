@@ -14,8 +14,7 @@ public class Fruit {
     private String img;
 
     public Fruit(String s) {
-        try
-        {
+        try {
             JSONObject Fruits = new JSONObject(s);
             JSONObject fruit = Fruits.getJSONObject("Fruit");
             String pos = fruit.getString("pos");
@@ -23,13 +22,17 @@ public class Fruit {
             this.visualLocation = null;
             this.value = fruit.getDouble("value");
             this.type = fruit.getInt("type");
-         //   this.img
+            if (this.type == 1) {
+                this.img = "apple.png";
+            } else {
+                this.img = "banana.png";
+            }
         }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
+        catch(Exception ex)
+            {
+                ex.printStackTrace();
+            }
         }
-    }
 
 
 
