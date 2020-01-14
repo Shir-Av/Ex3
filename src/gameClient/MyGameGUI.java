@@ -27,7 +27,7 @@ public class MyGameGUI extends JFrame implements ActionListener ,MouseListener{
         public graph g;
         String graph;
         private List<Fruit> fruits = new ArrayList<Fruit>();
-       // private List<Robot> robots = new ArrayList<Robot>();
+        private List<Robot> robots = new ArrayList<Robot>();
         private int MC;
 
 
@@ -187,7 +187,6 @@ public class MyGameGUI extends JFrame implements ActionListener ,MouseListener{
             {
                 return null;
             }
-
             double  min_x = Double.MAX_VALUE;
             double  min_y = Double.MAX_VALUE;
 
@@ -340,6 +339,6 @@ public class MyGameGUI extends JFrame implements ActionListener ,MouseListener{
         List<String> r= Game_Server.getServer(20).getRobots();
         System.out.println(game);
         System.out.println(r);
-        MyGameGUI gg = new MyGameGUI(20);
+        MyGameGUI gg = new MyGameGUI(23);
     }
 }
