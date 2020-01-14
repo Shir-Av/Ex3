@@ -8,10 +8,10 @@ import java.util.Collection;
 
 public class Fruit {
     public Point3D location;
-    private Point3D visualLocation;
     private double value;
     private int type;
     private String img;
+
 
     public Fruit(String s) {
         try {
@@ -19,7 +19,6 @@ public class Fruit {
             JSONObject fruit = Fruits.getJSONObject("Fruit");
             String pos = fruit.getString("pos");
             this.location = new Point3D(pos);
-            this.visualLocation = null;
             this.value = fruit.getDouble("value");
             this.type = fruit.getInt("type");
             if (this.type == 1) {
@@ -44,16 +43,6 @@ public class Fruit {
     public void setLocation(Point3D location)
     {
         this.location = location;
-    }
-
-    public Point3D getVisualLocation()
-    {
-        return visualLocation;
-    }
-
-    public void setVisualLocation(Point3D visualLocation)
-    {
-        this.visualLocation = visualLocation;
     }
 
     public double getValue()

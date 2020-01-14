@@ -1,5 +1,7 @@
 package elements;
 
+import dataStructure.edge_data;
+import dataStructure.graph;
 import org.json.JSONObject;
 import utils.Point3D;
 
@@ -16,6 +18,7 @@ public class Robot {
     public Point3D location;
     private static int i = 0;
     private String img = "robot.png";
+    public static final double EPS1 = 0.001, EPS2 = EPS1+EPS1, EPS=EPS2;
 
     public Robot()
     {
@@ -48,10 +51,6 @@ public class Robot {
             ex.printStackTrace();
         }
     }
-
-
-
-
 
     public int getId() {
         return id;
@@ -108,5 +107,7 @@ public class Robot {
     public void setImg(String img) {
         this.img = img;
     }
+
+
 }
 
