@@ -1653,20 +1653,11 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		String str = e.getActionCommand();
 		if (str.equals("Start manual game"))
 		{
-
+			g.set_manual_game();
 		}
 		else if (str.equals("Start automatic game"))
 		{
-
-			//JFrame startAuto = new JFrame();
-			String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
-			int level = Integer.parseInt(chooseLevel);
-			g.initGraph(level);
-			g.initGUI();
-			g.drawGraph();
-			g.drawFruits();
-			g.set_automatic_game(level);
-			g.drawRobots();
+			g.startAutomaticGame();
 		}
 	}
 
