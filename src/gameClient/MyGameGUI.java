@@ -15,12 +15,11 @@ import utils.StdDraw;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class MyGameGUI implements Runnable {
 
-    game_service game;
+    public game_service game;
     private ArrayList<Fruit> fruits;
     private ArrayList<Robot> robots;
     private int MC;
@@ -31,7 +30,7 @@ public class MyGameGUI implements Runnable {
     private Range rangeY;
     boolean graphInit = false;
     boolean insertRobot = false;
-    public static final double EPS1 = 0.00001, EPS2 = EPS1+EPS1, EPS=EPS2;
+    public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
 
 
     public MyGameGUI()
@@ -43,10 +42,10 @@ public class MyGameGUI implements Runnable {
 
     public void initGUI() {
         StdDraw.setCanvasSize(1900, 1000);
-        Range x = range_x();
-        Range y = range_y();
-        StdDraw.setXscale(x.get_min()-0.0007, x.get_max()+0.0007);
-        StdDraw.setYscale(y.get_min()-0.0007, y.get_max()+0.0007);
+        rangeX = range_x();
+        rangeY = range_y();
+        StdDraw.setXscale(rangeX.get_min()-0.0007,rangeX.get_max()+0.0007);
+        StdDraw.setYscale(rangeY.get_min()-0.0007, rangeY.get_max()+0.0007);
         StdDraw.g=this;
     }
 
@@ -123,28 +122,29 @@ public class MyGameGUI implements Runnable {
     private edge_data edgeWithFruit(Fruit f)
     {
         ArrayList<edge_data> edges = new ArrayList<edge_data>();
-            try {
-                JSONObject info = new JSONObject(game.getGraph());
-                JSONArray jEdges = info.getJSONArray("Edges");
-                for(int i = 0; i < jEdges.length(); ++i) {
-                    int src = jEdges.getJSONObject(i).getInt("src");
-                    int dest = jEdges.getJSONObject(i).getInt("dest");
-                    double w = jEdges.getJSONObject(i).getDouble("w");
-                    EdgeData e = new EdgeData(src, dest, w);
-                    edges.add(e);
-                }
+        try {
+            JSONObject info = new JSONObject(game.getGraph());
+            JSONArray jEdges = info.getJSONArray("Edges");
+            for(int i = 0; i < jEdges.length(); ++i) {
+                int src = jEdges.getJSONObject(i).getInt("src");
+                int dest = jEdges.getJSONObject(i).getInt("dest");
+                double w = jEdges.getJSONObject(i).getDouble("w");
+                EdgeData e = new EdgeData(src, dest, w);
+                edges.add(e);
             }
-            catch (Exception e)
-            {
-                System.out.println("IOException is caught");////////////////////////////////
-            }
+        } catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
 
-                for (edge_data e : edges) {
-                    if (isOnEdge(f.location,e,f.getType(),this.g)) {
-                        return e;
-                    }
-                }
+
+        for (edge_data e : edges) {
+            if (isOnEdge(f.location,e,f.getType(),this.g)) {
+                return e;
+            }
+        }
         return null;
+
     }
 
     public edge_data nextEdge(int robSrc)
@@ -216,14 +216,23 @@ public class MyGameGUI implements Runnable {
             }
         }
     }
-    private void score() {
+    private void scoreAndTimer() {
         try {
-            String gameinfo = game.toString();
-            JSONObject line = new JSONObject(gameinfo);
+            String gameInfo = game.toString();
+            JSONObject line = new JSONObject(gameInfo);
             JSONObject ttt = line.getJSONObject("GameServer");
             int score = ttt.getInt("grade");
-
-            StdDraw.text(rangeX.get_max(), rangeY.get_max() + 0.004, "score : " + score);
+            StdDraw.setPenColor(new Color(9,30,80));
+            StdDraw.setPenRadius(0.4);
+            Font font = new Font("Arial", Font.BOLD, 20);
+            StdDraw.setFont(font);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() - 0.0003, "Score : " + score);
+            StdDraw.setPenColor(new Color(14,92,35));
+            StdDraw.setPenRadius(0.4);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() ,"Time to end : " + this.game.timeToEnd() / 1000);
+            StdDraw.setPenRadius(0.015);
+            StdDraw.setPenColor(new Color(142,17,17));
+            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()-0.00009,0.0014,0.0004);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -241,64 +250,120 @@ public class MyGameGUI implements Runnable {
         System.out.println("Game Over: " + results);
         StdDraw.g = this;
     }
+
+
     public void set_manual_game()
     {
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
+      //  JFrame roby = new JFrame();
         initGraph(level);
+        initGUI();
+        drawGraph();
+        drawFruits();
+
+        int robotNum = 0;
         try
         {
             JSONObject info = new JSONObject(game.toString());
             JSONObject jRob = info.getJSONObject("GameServer");
-            int robotNum = jRob.getInt("robots");
-            int i = 0;
-            JFrame roby = new JFrame();
-            JOptionPane.showMessageDialog(roby, "You have " + robotNum + " robots to place. \n GO!");
-        } catch (Exception e)
+            robotNum = jRob.getInt("robots");
+           // JOptionPane.showMessageDialog(roby, "You have " + robotNum + " robots to place. \n GO!");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        int j = robotNum;
+        for (int i=1; i <= robotNum; i++) // for the first position
         {
+            //System.out.println("here");
+
+                String dst_str = JOptionPane.showInputDialog("You have " + j-- + " robots to place. \n Please insert robot number " + i + " first position :");
+                try {
+                    int dest = Integer.parseInt(dst_str);
+                    this.game.addRobot(dest);
+                }
+                catch (Exception ex)
+                {
+                    JOptionPane.showInputDialog("ERROR");
+                }
+        }
+        drawRobots();
+        StdDraw.g = this;
+    }
+    public void start_manual_game() {
+        set_manual_game();
+        Thread t = new Thread(this);
+        game.startGame();
+        t.start();
+    }
+    public void moveRobotsManually()
+    {
+        JFrame roby = new JFrame();
+        for (int i = 0; i < robots.size(); i++) {
+            Robot rob = robots.get(i);
+            if (rob.getDest() == -1) //if this robot doesnt have a next edge:
+            {
+                Object[] neighbors1 = checkNeighbors(rob.src);
+                String s = (String) JOptionPane.showInputDialog(roby, "Select the next nodeId: ", "Next step",
+                        JOptionPane.PLAIN_MESSAGE, null, neighbors1, neighbors1[0]);
+                game.chooseNextEdge(rob.id, Integer.parseInt(s));
+
+            }
+            String results = game.toString();
+            System.out.println("Game Over: " + results);
+            StdDraw.g = this;
 
         }
-
-
     }
-    public void Start_manual_game()
-    {
 
+
+    public Object[] checkNeighbors (int robSrc)
+    {
+        Object[] neighbors2 = new Object[g.getE(robSrc).size()];
+        for(edge_data e: this.g.getE(robSrc))
+        {
+            int j = 0;
+            neighbors2[j] = e.getDest();
+            j++;
+            System.out.println(neighbors2);
+        }
+
+        return neighbors2;
     }
 
     public void drawGraph() {
-
         StdDraw.clear();
         StdDraw.enableDoubleBuffering();
-        StdDraw.setPenColor(Color.blue);
-        StdDraw.setPenRadius(0.15);
         String s = "";
-        double ScaleX = ((rangeX.get_max()-rangeX.get_min())*0.04);
+        double sX = ((rangeX.get_max()-rangeX.get_min())*0.04);
         for (node_data n : this.g.getV()) {
             Point3D currNode = n.getLocation();
+            StdDraw.setFont(StdDraw.NODES_FONT);
             StdDraw.setPenColor(new Color(113,8,125));
-            StdDraw.filledCircle(currNode.x(), currNode.y(),ScaleX*0.1);
+            StdDraw.filledCircle(currNode.x(), currNode.y(),sX*0.1);
             s += Integer.toString(n.getKey());
-            StdDraw.text(currNode.x() , currNode.y()+ScaleX*0.2 , s);
+            StdDraw.text(currNode.x() , currNode.y()+sX*0.2 , s);
             s = "";
             for (edge_data e : this.g.getE(n.getKey())){
-                double src_x = n.getLocation().x();
-                double src_y = n.getLocation().y();
-                double dest_x = this.g.getNode(e.getDest()).getLocation().x();
-                double dest_y = this.g.getNode(e.getDest()).getLocation().y();
+                double srcX = n.getLocation().x();
+                double srcY = n.getLocation().y();
+                double destX = this.g.getNode(e.getDest()).getLocation().x();
+                double destY = this.g.getNode(e.getDest()).getLocation().y();
                 StdDraw.setPenColor(Color.darkGray);
                 StdDraw.setPenRadius(0.003);
-                StdDraw.line(src_x , src_y , dest_x , dest_y);
+                StdDraw.line(srcX , srcY , destX , destY);
                 double w = Math.round(e.getWeight()*100.0)/100.0;
                 String weight = Double.toString(w);
-                StdDraw.text(src_x * 0.3 + dest_x * 0.7 , src_y * 0.3 + dest_y * 0.7 , weight);
+                StdDraw.setPenColor(Color.BLACK);
+                StdDraw.setFont(StdDraw.EDGES_FONT);
+                StdDraw.text(srcX * 0.3 + destX * 0.7 , srcY * 0.3 + destY * 0.7 , weight);
                 StdDraw.setPenColor(new Color(156,246,111));
-                StdDraw.setPenRadius(0.15);
-                StdDraw.filledCircle(src_x * 0.2 + dest_x * 0.8, src_y * 0.2 + dest_y * 0.8, ScaleX*0.07);
-
+               // StdDraw.setPenRadius(0.15);
+                StdDraw.filledCircle(srcX * 0.2 + destX * 0.8, srcY * 0.2 + destY * 0.8, sX*0.07);
 
             }
         }
+        scoreAndTimer();
     }
 
     public void drawFruits ()
@@ -319,9 +384,6 @@ public class MyGameGUI implements Runnable {
         }
         insertRobot = false;
     }
-
-
-
 
     private Range range_x() {
     Range range;
@@ -396,21 +458,10 @@ public class MyGameGUI implements Runnable {
 
     @Override
     public void run() {
-        long first = System.currentTimeMillis();
         while (game.isRunning()) {
-            /*StdDraw.setPenColor(Color.RED);
-            StdDraw.setPenRadius(5);
-            StdDraw.text(35 * 2500, 32 * 2500, "" + game.timeToEnd());*/
-            if (System.currentTimeMillis() - first >= 1000) {
-                StdDraw.setPenColor(Color.RED);
-                StdDraw.setPenRadius(5);
-                StdDraw.text(35 * 2500, 32 * 2500, "" + game.timeToEnd());
-              //  StdDraw.text(rangeX.get_max()-5, rangeY.get_max() - 5,"time to end : " + this.game.timeToEnd() / 1000);
-
-                StdDraw.setPenRadius();
-            }
-            score();
             moveRobots();
+            //StdDraw.clear();
+            //StdDraw.enableDoubleBuffering();
             drawGraph();
             drawFruits();
             drawRobots();

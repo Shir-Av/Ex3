@@ -601,7 +601,8 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	// default font
 	private static final Font DEFAULT_FONT = new Font("SansSerif", Font.PLAIN, 16);
-
+	public static final Font NODES_FONT = new Font("SansSerif", Font.BOLD, 16);
+	public static final Font EDGES_FONT = new Font("SansSerif", Font.PLAIN, 13);
 	// current font
 	private static Font font;
 
@@ -1650,10 +1651,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
+
 		String str = e.getActionCommand();
+
 		if (str.equals("Start manual game"))
 		{
-			g.set_manual_game();
+			g.start_manual_game();
 		}
 		else if (str.equals("Start automatic game"))
 		{
