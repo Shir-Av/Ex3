@@ -29,10 +29,10 @@ public class Fruit {
             }
         }
         catch(Exception ex)
-            {
-                ex.printStackTrace();
-            }
+        {
+            ex.printStackTrace();
         }
+    }
 
 
 
