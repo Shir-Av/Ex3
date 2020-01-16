@@ -1,6 +1,4 @@
-
-
-		package utils;
+package utils;
 
 //package stdDraw;
 // https://introcs.cs.princeton.edu/java/stdlib/StdDraw.java.html
@@ -603,7 +601,8 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	// default font
 	private static final Font DEFAULT_FONT = new Font("SansSerif", Font.PLAIN, 16);
-
+	public static final Font NODES_FONT = new Font("SansSerif", Font.BOLD, 16);
+	public static final Font EDGES_FONT = new Font("SansSerif", Font.PLAIN, 13);
 	// current font
 	private static Font font;
 
@@ -712,17 +711,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	// create the menu bar (changed to private)
 	private static JMenuBar createMenuBar() {
-		JMenuBar MenuBar = new JMenuBar();
-		JMenu play = new JMenu("play");
-		play.addActionListener(std);
-		MenuBar.add(play);
-		JMenuItem Start_manual_game = new JMenuItem("Start manual game");
-		Start_manual_game.addActionListener(std);
-		play.add(Start_manual_game);
-		JMenuItem Start_automatic_game = new JMenuItem("Start automatic game");
-		Start_automatic_game.addActionListener(std);
-		play.add(Start_automatic_game);
-		//this.addMouseListener(this);
+			JMenuBar MenuBar = new JMenuBar();
+			JMenu play = new JMenu("play");
+			play.addActionListener(std);
+			MenuBar.add(play);
+			JMenuItem Start_manual_game = new JMenuItem("Start manual game");
+			Start_manual_game.addActionListener(std);
+			play.add(Start_manual_game);
+			JMenuItem Start_automatic_game = new JMenuItem("Start automatic game");
+			Start_automatic_game.addActionListener(std);
+			play.add(Start_automatic_game);
+			//this.addMouseListener(this);
 		return MenuBar;
 	}
 
@@ -1256,7 +1255,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	// get an image from the given filename
 	private static Image getImage(String filename) {
 		if (filename == null) throw new IllegalArgumentException();
-		if (filename == null) throw new IllegalArgumentException();
 
 		// to read from file
 		ImageIcon icon = new ImageIcon(filename);
@@ -1653,14 +1651,15 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
+
 		String str = e.getActionCommand();
+
 		if (str.equals("Start manual game"))
 		{
-			g.set_manual_game();
+			g.start_manual_game();
 		}
 		else if (str.equals("Start automatic game"))
 		{
-			g. set_manual_game();
 			g.startAutomaticGame();
 		}
 	}
