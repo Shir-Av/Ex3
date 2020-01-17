@@ -27,6 +27,7 @@ package utils;
  *
  ******************************************************************************/
 
+import gameClient.GameClient;
 import gameClient.MyGameGUI;
 
 import java.awt.BasicStroke;
@@ -1656,11 +1657,11 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 		if (str.equals("Start manual game"))
 		{
-			g.start_manual_game();
+			g.gameMode(0);
 		}
 		else if (str.equals("Start automatic game"))
 		{
-			g.startAutomaticGame();
+			g.gameMode(1);
 		}
 	}
 
