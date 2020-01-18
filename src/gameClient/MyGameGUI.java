@@ -14,6 +14,7 @@ import utils.StdDraw;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,6 +83,7 @@ public class MyGameGUI implements Runnable {
 
     public void set_automatic_game()
     {
+
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
         initGraph(level);
@@ -256,7 +258,6 @@ public class MyGameGUI implements Runnable {
     {
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
-      //  JFrame roby = new JFrame();
         initGraph(level);
         initGUI();
         drawGraph();
@@ -268,7 +269,6 @@ public class MyGameGUI implements Runnable {
             JSONObject info = new JSONObject(game.toString());
             JSONObject jRob = info.getJSONObject("GameServer");
             robotNum = jRob.getInt("robots");
-           // JOptionPane.showMessageDialog(roby, "You have " + robotNum + " robots to place. \n GO!");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -288,6 +288,7 @@ public class MyGameGUI implements Runnable {
                 }
         }
         drawRobots();
+        moveRobotsManually();
         StdDraw.g = this;
     }
     public void start_manual_game() {
@@ -295,45 +296,81 @@ public class MyGameGUI implements Runnable {
         Thread t = new Thread(this);
         game.startGame();
         t.start();
+        String results = game.toString();
+        System.out.println("Game Over: " + results);
+        StdDraw.g = this;
     }
     public void moveRobotsManually()
     {
-        JFrame roby = new JFrame();
-        for (int i = 0; i < robots.size(); i++) {
-            Robot rob = robots.get(i);
-            if (rob.getDest() == -1) //if this robot doesnt have a next edge:
-            {
-                Object[] neighbors1 = checkNeighbors(rob.src);
-                String s = (String) JOptionPane.showInputDialog(roby, "Select the next nodeId: ", "Next step",
-                        JOptionPane.PLAIN_MESSAGE, null, neighbors1, neighbors1[0]);
-                game.chooseNextEdge(rob.id, Integer.parseInt(s));
+            JFrame roby = new JFrame();
+            for (Robot rob : robots) {
+                if (rob.getId() == robotPressed()) {
+                    Object[] neighbors1 = checkNeighbors(rob.src);
+                    String s = (String) JOptionPane.showInputDialog(roby, "Select the next nodeId for Robot number: " + rob.id, "Next step",
+                            JOptionPane.PLAIN_MESSAGE, null, neighbors1, neighbors1[0]);
+                    this.game.chooseNextEdge(rob.id, Integer.parseInt(s));
+                    this.game.move();
+                }
+                String results = game.toString();
+                System.out.println("Game Over: " + results);
+                StdDraw.g = this;
+                drawGraph();
 
             }
-            String results = game.toString();
-            System.out.println("Game Over: " + results);
-            StdDraw.g = this;
-
         }
-    }
+//check which robot was pressed return robot id
+    public int robotPressed()
+    {
+        try {
+            if (!game.isRunning()) {
+                return -1;
+            }
+        }
+            catch (Exception ex) {
 
+            }
+            List<String> logR = game.getRobots();
+            if (logR != null)
+            {
+                for (int i = 0; i < logR.size(); i++) {
+                    String robot_json = logR.get(i);
+                    try {
+                        JSONObject line = new JSONObject(robot_json);
+                        JSONObject ttt = line.getJSONObject("Robot");
+                        String id = ttt.getString("id");
+                        String pos = ttt.getString("pos");
+                        Point3D pressedPoint = new Point3D(pos);
 
+                        double xRobot = StdDraw.mouseX();
+                        double yRobot = StdDraw.mouseY();
+                        Point3D xyRobot = new Point3D(xRobot, yRobot);
+                        if (xyRobot.distance2D(pressedPoint) <= 8) {
+                            return Integer.parseInt(id);
+                        }
+                    } catch (Exception ex) {
+
+                    }
+                }
+            }
+            return -1;
+        }
     public Object[] checkNeighbors (int robSrc)
     {
         Object[] neighbors2 = new Object[g.getE(robSrc).size()];
+        int j = 0;
         for(edge_data e: this.g.getE(robSrc))
         {
-            int j = 0;
             neighbors2[j] = e.getDest();
             j++;
-            System.out.println(neighbors2);
+            System.out.println(neighbors2.toString());
         }
 
         return neighbors2;
     }
 
     public void drawGraph() {
-        StdDraw.clear();
-        StdDraw.enableDoubleBuffering();
+      //  StdDraw.clear();
+      //  StdDraw.enableDoubleBuffering();
         String s = "";
         double sX = ((rangeX.get_max()-rangeX.get_min())*0.04);
         for (node_data n : this.g.getV()) {
@@ -459,16 +496,21 @@ public class MyGameGUI implements Runnable {
     @Override
     public void run() {
         while (game.isRunning()) {
-            moveRobots();
+            // moveRobots();
             //StdDraw.clear();
             //StdDraw.enableDoubleBuffering();
-            drawGraph();
-            drawFruits();
-            drawRobots();
-            StdDraw.show();
+            // drawGraph();
+            if (StdDraw.isMousePressed()) {
+                robotPressed();
+            }
+                moveRobotsManually();
+                drawFruits();
+                drawRobots();
+                StdDraw.show();
+            }
+            System.out.println("Game over " + this.game.toString());
         }
-        System.out.println("Game over " + this.game.toString());
-    }
+
 
     public static void main(String[] args) {
         MyGameGUI gg = new MyGameGUI();
