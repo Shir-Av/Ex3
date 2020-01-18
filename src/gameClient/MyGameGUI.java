@@ -1,11 +1,10 @@
 package gameClient;
-import Server.Game_Server;
 import Server.game_service;
 import algorithms.Graph_Algo;
+import com.sun.corba.se.impl.orbutil.graph.Graph;
 import dataStructure.*;
 import elements.Fruit;
 import elements.Robot;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import utils.Point3D;
@@ -14,23 +13,22 @@ import utils.StdDraw;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyGameGUI implements Runnable {
-
+public class MyGameGUI extends Thread {//implements Runnable {
+    public GameClient gameClient;
     public game_service game;
-    private ArrayList<Fruit> fruits;
-    private ArrayList<Robot> robots;
+    private ArrayList<Fruit> fruits = new ArrayList<>();
+    private ArrayList<Robot> robots = new ArrayList<>();
     private int MC;
-    Timer timer;
+    public static Thread t;
     graph g = new DGraph();
     private Graph_Algo gAlgo = new Graph_Algo();
     private Range rangeX;
     private Range rangeY;
     boolean graphInit = false;
-    boolean insertRobot = false;
+    boolean isAutoMode = false;
     public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
 
 
@@ -43,184 +41,18 @@ public class MyGameGUI implements Runnable {
 
     public void initGUI() {
         StdDraw.setCanvasSize(1900, 1000);
-        rangeX = range_x();
-        rangeY = range_y();
-        StdDraw.setXscale(rangeX.get_min()-0.0007,rangeX.get_max()+0.0007);
-        StdDraw.setYscale(rangeY.get_min()-0.0007, rangeY.get_max()+0.0007);
+        if (graphInit) {
+            rangeX = range_x();
+            rangeY = range_y();
+            StdDraw.setXscale(rangeX.get_min() - 0.0007, rangeX.get_max() + 0.0007);
+            StdDraw.setYscale(rangeY.get_min() - 0.0007, rangeY.get_max() + 0.0007);
+        }
         StdDraw.g=this;
     }
 
-    public void initGraph(int level) {
-        this.game = Game_Server.getServer(level);
-        String graph = Game_Server.getServer(level).getGraph();
-        this.g = new DGraph(graph);
-        this.gAlgo.init(g);
-        this.fruits = new ArrayList<Fruit>();
-        initFruits();
-        this.robots = new ArrayList<Robot>();
-        StdDraw.g = this;
-    }
-     public void initFruits(){
-         this.fruits.clear();
-         List<String> fruitsString = this.game.getFruits();
-         for (String s : fruitsString)
-         {
-             Fruit f = new Fruit(s);
-             this.fruits.add(f);
-         }
-         this.fruits.sort((o1, o2) -> (int)(o2.getValue())-(int)(o1.getValue()));
-     }
-
-     public void initRobots()
-     {
-         this.robots.clear();
-         List<String> robotString = game.getRobots();
-         for (String s : robotString) {
-             Robot r = new Robot(s);
-             this.robots.add(r);
-         }
-     }
-
-    public void set_automatic_game()
-    {
-
-        String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
-        int level = Integer.parseInt(chooseLevel);
-        initGraph(level);
-        initGUI();
-        drawGraph();
-        drawFruits();
-
-        int robotNum = 0;
-        try {
-            JSONObject info = new JSONObject(game.toString());
-            JSONObject jRob = info.getJSONObject("GameServer");
-             robotNum = jRob.getInt("robots");
-        }
-        catch (Exception e)
-        {
-            System.out.println("fail here");
-        }
-
-        while (robotNum > 0)
-        {
-            for(Fruit f: this.fruits)
-            {
-               edge_data e = edgeWithFruit(f);
-                game.addRobot(e.getSrc());
-            }
-            robotNum--;
-        }
-        List<String> robotString = game.getRobots();
-        for (String s : robotString) {
-            Robot r = new Robot(s);
-            this.robots.add(r);
-        }
-        drawRobots();
-        StdDraw.g = this;
-    }
-
-
-    private edge_data edgeWithFruit(Fruit f)
-    {
-        ArrayList<edge_data> edges = new ArrayList<edge_data>();
-        try {
-            JSONObject info = new JSONObject(game.getGraph());
-            JSONArray jEdges = info.getJSONArray("Edges");
-            for(int i = 0; i < jEdges.length(); ++i) {
-                int src = jEdges.getJSONObject(i).getInt("src");
-                int dest = jEdges.getJSONObject(i).getInt("dest");
-                double w = jEdges.getJSONObject(i).getDouble("w");
-                EdgeData e = new EdgeData(src, dest, w);
-                edges.add(e);
-            }
-        } catch (JSONException e)
-        {
-            e.printStackTrace();
-        }
-
-
-        for (edge_data e : edges) {
-            if (isOnEdge(f.location,e,f.getType(),this.g)) {
-                return e;
-            }
-        }
-        return null;
-
-    }
-
-    public edge_data nextEdge(int robSrc)
-    {
-        int ansSrc = robSrc;
-        int ansDest = robSrc;
-        //Graph_Algo ga = (Graph_Algo)g;
-        double minPath = Double.MAX_VALUE;
-        initFruits();
-        for (Fruit f : this.fruits)
-        {
-            edge_data edgeOfFruit = edgeWithFruit(f);
-            double shortest = this.gAlgo.shortestPathDist(robSrc,edgeOfFruit.getSrc());
-            if (shortest < minPath)
-            {
-                minPath = shortest;
-                ansSrc = edgeOfFruit.getSrc() ;
-                ansDest = edgeOfFruit.getDest();
-            }
-        }
-        return this.g.getEdge(ansSrc,ansDest);
-    }
-
-    public List<node_data> shortestPathToFruit(int src, int dest){
-        return this.gAlgo.shortestPath(src, dest);
-    }
-
-    public void moveRobots ()
-    {
-        List<String> moveList = this.game.move();
-        if (moveList != null) {
-            long time = this.game.timeToEnd();
-            for (int i = 0; i < moveList.size(); i++) {
-                String robot_json = moveList.get(i);
-                try {
-                    JSONObject line = new JSONObject(robot_json);
-                    JSONObject ttt = line.getJSONObject("Robot");
-                    int rId = ttt.getInt("id");
-                    int srcR = ttt.getInt("src");
-                    int dest = ttt.getInt("dest");
-
-                    if(dest == -1)
-                    {
-                        dest = nextEdge(srcR).getSrc();
-
-                        if (dest == srcR) {
-
-                            game.chooseNextEdge(rId, nextEdge(srcR).getDest());
-                        }
-                        else //if the list isnt empty than run on the node list to the end and than set the dest to be the next node on ths list
-                        {
-                            List<node_data> nodesSrcToDest = shortestPathToFruit(srcR, dest);
-                            for (node_data n : nodesSrcToDest)
-                            {
-                                dest = n.getKey();
-                                game.chooseNextEdge(rId, dest);
-                            }
-                            dest = nextEdge(srcR).getDest();
-                            game.chooseNextEdge(rId, dest);
-                        }
-                    }
-
-                    System.out.println("Turn to node: "+dest+"  time to end:"+(time/1000));
-                    System.out.println(ttt);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }
-    }
     private void scoreAndTimer() {
         try {
-            String gameInfo = game.toString();
+            String gameInfo = gameClient.game.toString();
             JSONObject line = new JSONObject(gameInfo);
             JSONObject ttt = line.getJSONObject("GameServer");
             int score = ttt.getInt("grade");
@@ -231,7 +63,7 @@ public class MyGameGUI implements Runnable {
             StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() - 0.0003, "Score : " + score);
             StdDraw.setPenColor(new Color(14,92,35));
             StdDraw.setPenRadius(0.4);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() ,"Time to end : " + this.game.timeToEnd() / 1000);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
             StdDraw.setPenRadius(0.015);
             StdDraw.setPenColor(new Color(142,17,17));
             StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()-0.00009,0.0014,0.0004);
@@ -242,27 +74,38 @@ public class MyGameGUI implements Runnable {
         StdDraw.g = this;
     }
 
-
-    public void startAutomaticGame (){
-        set_automatic_game();
-        Thread t = new Thread(this);
-        game.startGame();
-        t.start();
-        String results = game.toString();
-        System.out.println("Game Over: " + results);
-        StdDraw.g = this;
-    }
-
-
-    public void set_manual_game()
+    public void gameMode (int mode)
     {
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
-        initGraph(level);
+        this.gameClient = new GameClient(level);
+        StdDraw.g = this;
+        graphInit = true;
         initGUI();
-        drawGraph();
-        drawFruits();
 
+        if (mode == 1){
+            isAutoMode = true;
+            t = new Thread(this);
+            gameClient.startAutomaticGame(level);
+            StdDraw.g = this;
+        }
+        else {
+            this.game = this.gameClient.game;
+            this.g = this.gameClient.g;
+            initFruits();
+            t = new Thread(this);
+            start_manual_game(level);
+
+
+        }
+    }
+
+    public void set_manual_game(int level)
+    {
+        drawGraph((DGraph)this.g);
+        drawFruits();
+        StdDraw.g = this;
+        StdDraw.show();
         int robotNum = 0;
         try
         {
@@ -275,50 +118,43 @@ public class MyGameGUI implements Runnable {
         int j = robotNum;
         for (int i=1; i <= robotNum; i++) // for the first position
         {
-            //System.out.println("here");
-
-                String dst_str = JOptionPane.showInputDialog("You have " + j-- + " robots to place. \n Please insert robot number " + i + " first position :");
-                try {
-                    int dest = Integer.parseInt(dst_str);
-                    this.game.addRobot(dest);
-                }
-                catch (Exception ex)
-                {
-                    JOptionPane.showInputDialog("ERROR");
-                }
+            String dst_str = JOptionPane.showInputDialog("You have " + j-- + " robots to place. \n Please insert robot number " + i + " first position :");
+            try {
+                int dest = Integer.parseInt(dst_str);
+                this.game.addRobot(dest);
+            }
+            catch (Exception ex)
+            {
+                JOptionPane.showInputDialog("ERROR");
+            }
         }
         drawRobots();
-        moveRobotsManually();
         StdDraw.g = this;
     }
-    public void start_manual_game() {
-        set_manual_game();
-        Thread t = new Thread(this);
+    public void start_manual_game(int level) {
+        set_manual_game(level);
         game.startGame();
         t.start();
-        String results = game.toString();
-        System.out.println("Game Over: " + results);
         StdDraw.g = this;
     }
     public void moveRobotsManually()
     {
-            JFrame roby = new JFrame();
-            for (Robot rob : robots) {
+        JFrame roby = new JFrame();
+        for (Robot rob : robots) {
+            if (StdDraw.isMousePressed()) {
                 if (rob.getId() == robotPressed()) {
                     Object[] neighbors1 = checkNeighbors(rob.src);
-                    String s = (String) JOptionPane.showInputDialog(roby, "Select the next nodeId for Robot number: " + rob.id, "Next step",
+                    Object s = JOptionPane.showInputDialog(roby, "Select the next nodeId for Robot number: " + rob.id, "Next step",
                             JOptionPane.PLAIN_MESSAGE, null, neighbors1, neighbors1[0]);
-                    this.game.chooseNextEdge(rob.id, Integer.parseInt(s));
-                    this.game.move();
+                    int n = (Integer)s;
+                    this.game.chooseNextEdge(rob.id, n);
+                    System.out.println("after choose");
                 }
-                String results = game.toString();
-                System.out.println("Game Over: " + results);
                 StdDraw.g = this;
-                drawGraph();
-
             }
         }
-//check which robot was pressed return robot id
+    }
+    //check which robot was pressed return robot id
     public int robotPressed()
     {
         try {
@@ -326,34 +162,32 @@ public class MyGameGUI implements Runnable {
                 return -1;
             }
         }
-            catch (Exception ex) {
-
-            }
-            List<String> logR = game.getRobots();
-            if (logR != null)
-            {
-                for (int i = 0; i < logR.size(); i++) {
-                    String robot_json = logR.get(i);
-                    try {
-                        JSONObject line = new JSONObject(robot_json);
-                        JSONObject ttt = line.getJSONObject("Robot");
-                        String id = ttt.getString("id");
-                        String pos = ttt.getString("pos");
-                        Point3D pressedPoint = new Point3D(pos);
-
-                        double xRobot = StdDraw.mouseX();
-                        double yRobot = StdDraw.mouseY();
-                        Point3D xyRobot = new Point3D(xRobot, yRobot);
-                        if (xyRobot.distance2D(pressedPoint) <= 8) {
-                            return Integer.parseInt(id);
-                        }
-                    } catch (Exception ex) {
-
+        catch (Exception ex) {
+        }
+        List<String> logR = game.getRobots();
+        if (logR != null)
+        {
+            for (int i = 0; i < logR.size(); i++) {
+                String robot_json = logR.get(i);
+                try {
+                    JSONObject line = new JSONObject(robot_json);
+                    JSONObject ttt = line.getJSONObject("Robot");
+                    int id = ttt.getInt("id");
+                    String pos = ttt.getString("pos");
+                    Point3D pressedPoint = new Point3D(pos);
+                    double xRobot = StdDraw.mouseX();
+                    double yRobot = StdDraw.mouseY();
+                    Point3D xyRobot = new Point3D(xRobot, yRobot);
+                    if (xyRobot.distance2D(pressedPoint) <= 0.0002) {
+                        return id;
                     }
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
             }
-            return -1;
         }
+        return -1;
+    }
     public Object[] checkNeighbors (int robSrc)
     {
         Object[] neighbors2 = new Object[g.getE(robSrc).size()];
@@ -362,18 +196,17 @@ public class MyGameGUI implements Runnable {
         {
             neighbors2[j] = e.getDest();
             j++;
-            System.out.println(neighbors2.toString());
         }
 
         return neighbors2;
     }
 
-    public void drawGraph() {
-      //  StdDraw.clear();
-      //  StdDraw.enableDoubleBuffering();
+    public void drawGraph(DGraph g) {
+        StdDraw.clear();
+        StdDraw.enableDoubleBuffering();
         String s = "";
         double sX = ((rangeX.get_max()-rangeX.get_min())*0.04);
-        for (node_data n : this.g.getV()) {
+        for (node_data n : g.getV()) {
             Point3D currNode = n.getLocation();
             StdDraw.setFont(StdDraw.NODES_FONT);
             StdDraw.setPenColor(new Color(113,8,125));
@@ -381,11 +214,11 @@ public class MyGameGUI implements Runnable {
             s += Integer.toString(n.getKey());
             StdDraw.text(currNode.x() , currNode.y()+sX*0.2 , s);
             s = "";
-            for (edge_data e : this.g.getE(n.getKey())){
+            for (edge_data e : g.getE(n.getKey())){
                 double srcX = n.getLocation().x();
                 double srcY = n.getLocation().y();
-                double destX = this.g.getNode(e.getDest()).getLocation().x();
-                double destY = this.g.getNode(e.getDest()).getLocation().y();
+                double destX = g.getNode(e.getDest()).getLocation().x();
+                double destY = g.getNode(e.getDest()).getLocation().y();
                 StdDraw.setPenColor(Color.darkGray);
                 StdDraw.setPenRadius(0.003);
                 StdDraw.line(srcX , srcY , destX , destY);
@@ -405,7 +238,14 @@ public class MyGameGUI implements Runnable {
 
     public void drawFruits ()
     {
-        initFruits();
+        if (isAutoMode) {
+            this.gameClient.initFruits();
+            this.fruits = gameClient.fruits;
+        }
+        else{
+            initFruits();
+        }
+
         for (Fruit f : this.fruits)
         {
             StdDraw.picture(f.location.x() , f.location.y() , f.getImg() , 0.0005 , 0.0004);
@@ -414,24 +254,30 @@ public class MyGameGUI implements Runnable {
 
     public void drawRobots()
     {
-        initRobots();
+        if (isAutoMode) {
+            gameClient.initRobots();
+            this.robots = gameClient.robots;
+        }
+        else{
+            initRobots();
+        }
+
         for (Robot r : this.robots)
         {
             StdDraw.picture(r.location.x() , r.location.y() , r.getImg() , 0.0011 , 0.0010);
         }
-        insertRobot = false;
     }
 
     private Range range_x() {
     Range range;
-        if (this.g.getV().size() == 0) {
+        if (this.gameClient.g.getV().size() == 0) {
             range = new Range(-100,100);
             this.rangeX = range;
             return range;
         }
         double min_x = Double.MAX_VALUE;
         double max_x = Double.MIN_VALUE;
-        for (node_data n : this.g.getV()) {
+        for (node_data n : this.gameClient.g.getV()) {
             if (n.getLocation().x() < min_x) {
                 min_x = n.getLocation().x();
             }
@@ -446,14 +292,14 @@ public class MyGameGUI implements Runnable {
 
     private Range range_y() {
         Range range;
-        if (this.g.getV().size() == 0) {
+        if (this.gameClient.g.getV().size() == 0) {
             range = new Range(-100,100);
             this.rangeY = range;
             return range;
         }
         double min_y = Double.MAX_VALUE;
         double max_y = Double.MIN_VALUE;
-        for (node_data n : this.g.getV()) {
+        for (node_data n : this.gameClient.g.getV()) {
             if (n.getLocation().y() < min_y) {
                 min_y = n.getLocation().y();
             }
@@ -465,52 +311,63 @@ public class MyGameGUI implements Runnable {
         this.rangeY = range;
         return range;
     }
-
-    public static boolean isOnEdge(Point3D p, Point3D src, Point3D dest)
-    {
-        boolean ans = false;
-        double dist = src.distance2D(dest);
-        double d1 = src.distance2D(p) + p.distance2D(dest);
-        if(dist > d1-EPS)
+    public void initFruits(){
+        this.fruits.clear();
+        List<String> fruitsString = this.game.getFruits();
+        for (String s : fruitsString)
         {
-            ans = true;
+            Fruit f = new Fruit(s);
+            this.fruits.add(f);
         }
-        return ans;
+        this.fruits.sort((o1, o2) -> (int)(o2.getValue())-(int)(o1.getValue()));
     }
-    public static boolean isOnEdge(Point3D p, int s, int d, graph g)
+
+    public void initRobots()
     {
-        Point3D src = g.getNode(s).getLocation();
-        Point3D dest = g.getNode(d).getLocation();
-        return isOnEdge(p, src, dest);
-    }
-    public static boolean isOnEdge(Point3D p, edge_data e, int type, graph g)
-    {
-        int src = g.getNode(e.getSrc()).getKey();
-        int dest = g.getNode(e.getDest()).getKey();
-        if (type < 0 && dest > src) return false;
-        if (type > 0 && dest < src) return false;
-        return isOnEdge(p, src, dest, g);
+        this.robots.clear();
+        List<String> robotString = this.game.getRobots();
+        for (String s : robotString) {
+            Robot r = new Robot(s);
+            this.robots.add(r);
+        }
     }
 
 
     @Override
     public void run() {
-        while (game.isRunning()) {
-            // moveRobots();
-            //StdDraw.clear();
-            //StdDraw.enableDoubleBuffering();
-            // drawGraph();
-            if (StdDraw.isMousePressed()) {
-                robotPressed();
+        if (isAutoMode)
+        {
+            while (gameClient.game.isRunning()) {
+                try {
+                    sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                this.gameClient.moveRobots();
+                drawGraph((DGraph) gameClient.g);
+                drawFruits();
+                drawRobots();
+                StdDraw.show();
             }
+            System.out.println("Game over " + this.gameClient.game.toString());
+        }
+        else {
+            while (this.game.isRunning()) {
+                try {
+                    sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 moveRobotsManually();
+                this.game.move();
+                drawGraph((DGraph) this.g);
                 drawFruits();
                 drawRobots();
                 StdDraw.show();
             }
             System.out.println("Game over " + this.game.toString());
         }
-
+    }
 
     public static void main(String[] args) {
         MyGameGUI gg = new MyGameGUI();

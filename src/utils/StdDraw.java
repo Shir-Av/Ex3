@@ -27,6 +27,7 @@ package utils;
  *
  ******************************************************************************/
 
+import gameClient.GameClient;
 import gameClient.MyGameGUI;
 
 import java.awt.BasicStroke;
@@ -384,7 +385,7 @@ import javax.swing.*;
  *  <ul>
  *  <li> {@link #isMousePressed()}
  *  <li> {@link #mouseX()}
- *  <li>
+ *  <li> {@link #mouseY()}
  *  </ul>
  *  <p>
  *  The first method tells you whether a mouse button is currently being pressed.
@@ -724,8 +725,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			//this.addMouseListener(this);
 		return MenuBar;
 	}
-
-
 
 
 	/***************************************************************************
@@ -1647,32 +1646,10 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		}
 	}
 
-	
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		if (!g.game.isRunning()) {
-			return;
-		}
-	}
 
-	@Override
-	public void mousePressed(MouseEvent e)
-	{
-		int xPress = e.getX();
-		int yPress = e.getY();
-		/*int robotID = g.robotPressed(xPress, yPress);
-		if (robotID != -1) {
-			try {
-				String dest = JOptionPane.showInputDialog("Enter destination for robot number: " + robotID);
-				int destination = Integer.parseInt(dest);
-				g.game.chooseNextEdge(robotID, destination);
-			}catch(Exception ex) {
-				System.out.println("pressed wrong place");
-			}
-		}*/
-	}
-
-
+	/**
+	 * This method cannot be called directly.
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
@@ -1680,18 +1657,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 		if (str.equals("Start manual game"))
 		{
-			this.addMouseListener(this);
-			g.start_manual_game();
+			g.gameMode(0);
 		}
 		else if (str.equals("Start automatic game"))
 		{
-			this.addMouseListener(this);
-			g.startAutomaticGame();
+			g.gameMode(1);
 		}
-	}
-
-	private void addMouseListener(StdDraw stdDraw)
-	{
 	}
 
 
@@ -1733,6 +1704,12 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			return mouseX;
 		}
 	}
+
+	/**
+	 * Returns the <em>y</em>-coordinate of the mouse.
+	 *
+	 * @return <em>y</em>-coordinate of the mouse
+	 */
 	public static double mouseY() {
 		synchronized (mouseLock) {
 			return mouseY;
@@ -1740,10 +1717,13 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	}
 
 
-
 	/**
 	 * This method cannot be called directly.
 	 */
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// this body is intentionally left empty
+	}
 
 	/**
 	 * This method cannot be called directly.
@@ -1764,7 +1744,14 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	/**
 	 * This method cannot be called directly.
 	 */
-
+	@Override
+	public void mousePressed(MouseEvent e) {
+		synchronized (mouseLock) {
+			mouseX = StdDraw.userX(e.getX());
+			mouseY = StdDraw.userY(e.getY());
+			isMousePressed = true;
+		}
+	}
 
 	/**
 	 * This method cannot be called directly.
