@@ -6,36 +6,58 @@ This assignment data structures and algorithms are based on previous project Ex2
 
 **How To Play**
 
+1. Run the game and select game mode: manual or automatic
+
+<img width="301" alt="openWindow" src="https://user-images.githubusercontent.com/58072903/72681129-404f5580-3ac9-11ea-8197-dca8d590c959.png">
+
+2. In each game mode, select the desired level to play
+
+<img width="960" alt="level" src="https://user-images.githubusercontent.com/58072903/72681209-eef39600-3ac9-11ea-876c-8cd27f312cb2.png">
+
+3. **In automatic mode :**
+
+    In this mode the game will work automatically according to algorithms we have developed to gain the most points for this stage.
+    The robots will be strategically placed, according to an algorithm, at the Node closest to the fruit and will move to the next Node     according to a calculation of the fruit closest to them.
+    
+    <img width="952" alt="automatic" src="https://user-images.githubusercontent.com/58072903/72681339-2a429480-3acb-11ea-903c-200d793ab949.png">
+    
+4. **In manual mode :**
+
+In this mode the game will work manually according to the player's choice.
+After selecting the stage Please follow these steps:
+
+- A window will open, listing the number of robots for that stage, you will be required to choose the initial position of each robot on the graph.
+
+<img width="949" alt="manual 1" src="https://user-images.githubusercontent.com/58072903/72681463-9671c800-3acc-11ea-8da8-6ae30c8cab70.png">
 
 
+-  After the initial placement of the robots, click on each robot and select its next target according to the possible "neighbors" list.
+
+<img width="949" alt="manual 2" src="https://user-images.githubusercontent.com/58072903/72681895-af7c7800-3ad0-11ea-86e7-cad7eb2c4976.png">
+
+- **Note that each stage is timed and the goal of the game is to get the highest score by eating as much fruit as possible.**
 
 
 **The project includes the following class:**
 
+- Fruit class:
 
-- NodeData implements node_data interface.
+This class represents the set of operations applicable on a fruit.
 
-- EdgeData implements edge_data interface.
+- Robot class:
 
-- DGraph implements graph interface.
+This class represents the set of operations applicable on a robot.
 
-- Graph_Algo implements graph_algorithms interface.
+- GameClient:
 
-- Graph_GUI.
+This class represents the auto-play scenario.
+This class uses a "server" (jar file) named GameServer, which we perform in-game operations.
 
-**The main algorithms that are available in our program are:**
+- MyGameGUI:
 
-- isconnected - Returns true if and only if (iff) there is a valid path from EVREY node to each other node.
-
-- shortestPathDistt- a method that calculate the shortest path from given source point to given destination point.
-
-- shortestPath(int src, int dest) - return a list of nodes that represents the shortest way from src to dest.
-
-- TSP(List targets) - return the shortest path that includes every node in the input list 'targets' (by order).
-
-in addition it is available to save and load a graph to and from a file.
-
-<img width="741" alt="graph" src="https://user-images.githubusercontent.com/58072903/71782444-8fce5580-2fe2-11ea-86f2-87808ddd8b94.png">
+This class represents a Graphical User Interface - GUI of the game.
+In this class the manual game scenario is realized.
+This class uses a "server" (jar file) named GameServer, which we perform in-game operations.
 
 
-
+**for more info of the project go to wiki.**
