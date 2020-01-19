@@ -45,7 +45,7 @@ public class Robot {
             this.img = "robot.png";
             this.src =  robot.getInt("src");
             this.dest =  robot.getInt("dest");
-            }
+        }
         catch(Exception ex)
         {
             ex.printStackTrace();
@@ -110,4 +110,3 @@ public class Robot {
 
 
 }
-

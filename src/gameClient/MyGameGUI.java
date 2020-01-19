@@ -234,7 +234,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
                 StdDraw.setFont(StdDraw.EDGES_FONT);
                 StdDraw.text(srcX * 0.3 + destX * 0.7 , srcY * 0.3 + destY * 0.7 , weight);
                 StdDraw.setPenColor(new Color(156,246,111));
-               // StdDraw.setPenRadius(0.15);
+                // StdDraw.setPenRadius(0.15);
                 StdDraw.filledCircle(srcX * 0.2 + destX * 0.8, srcY * 0.2 + destY * 0.8, sX*0.07);
 
             }
@@ -254,12 +254,12 @@ public class MyGameGUI extends Thread {//implements Runnable {
 
         for (Fruit f : this.fruits)
         {
-           if(f.getType() == 1){
-               MyGameGUI.log.location_sampling("fruit_1",f.getLocation().toString());
-           }
-           else{
-               MyGameGUI.log.location_sampling("fruit_-1",f.getLocation().toString());
-           }
+            if(f.getType() == 1){
+                MyGameGUI.log.location_sampling("fruit_1",f.getLocation().toString());
+            }
+            else{
+                MyGameGUI.log.location_sampling("fruit_-1",f.getLocation().toString());
+            }
             StdDraw.picture(f.location.x() , f.location.y() , f.getImg() , 0.0005 , 0.0004);
         }
     }
@@ -282,7 +282,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
     }
 
     private Range range_x() {
-    Range range;
+        Range range;
         if (this.gameClient.g.getV().size() == 0) {
             range = new Range(-100,100);
             this.rangeX = range;
@@ -403,4 +403,4 @@ public class MyGameGUI extends Thread {//implements Runnable {
 
     }
 
-}
+    }
