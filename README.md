@@ -12,7 +12,7 @@ This assignment data structures and algorithms are based on previous project Ex2
 
 2. In each game mode, select the desired level to play
 
-<img width="960" alt="level" src="https://user-images.githubusercontent.com/58072903/72681209-eef39600-3ac9-11ea-876c-8cd27f312cb2.png">
+<img width="946" alt="manual 3" src="https://user-images.githubusercontent.com/58072903/72682175-08e5a680-3ad3-11ea-871c-1ae7b1854cf0.png">
 
 3. **In automatic mode :**
 
