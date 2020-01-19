@@ -15,7 +15,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyGameGUI extends Thread {//implements Runnable {
+public class MyGameGUI extends Thread {
     public GameClient gameClient;
     public game_service game;
     private ArrayList<Fruit> fruits = new ArrayList<>();
@@ -23,7 +23,6 @@ public class MyGameGUI extends Thread {//implements Runnable {
     private static int currLevel;
     public static Thread t;
     graph g = new DGraph();
-    private Graph_Algo gAlgo = new Graph_Algo();
     private Range rangeX;
     private Range rangeY;
     boolean graphInit = false;
@@ -31,13 +30,20 @@ public class MyGameGUI extends Thread {//implements Runnable {
     public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
     private static KML_Logger log;
 
-
+    /**
+     * this function calls the init gui function.
+     */
     public MyGameGUI()
     {
         initGUI();
         StdDraw.g = this;
 
     }
+
+    /**
+     * this function open a new frame with menu bar.
+     *(the user has an option to choose what mode he would like to play).
+     */
 
     public void initGUI() {
         StdDraw.setCanvasSize(1900, 1000);
@@ -50,32 +56,12 @@ public class MyGameGUI extends Thread {//implements Runnable {
         StdDraw.g=this;
     }
 
-    private void scoreAndTimer() {
-        try {
-            String gameInfo = gameClient.game.toString();
-            JSONObject line = new JSONObject(gameInfo);
-            JSONObject ttt = line.getJSONObject("GameServer");
-            int score = ttt.getInt("grade");
-            int moves = ttt.getInt("moves");
-            StdDraw.setPenColor(new Color(9,30,80));
-            StdDraw.setPenRadius(0.4);
-            Font font = new Font("Arial", Font.BOLD, 20);
-            StdDraw.setFont(font);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() , "Score : " + score);
-            StdDraw.setPenColor(new Color(14,92,35));
-            StdDraw.setPenRadius(0.4);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max()+ 0.0003 ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
-            StdDraw.setPenRadius(0.015);
-            StdDraw.setPenColor(new Color(142,17,17));
-            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()+ 0.0001,0.0014,0.0004);
-            StdDraw.setPenColor(new Color(255,85,0));
-            StdDraw.text(rangeX.get_min()+0.00005, rangeY.get_max()+0.0005 ,"Level: "+currLevel);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        StdDraw.g = this;
-    }
+    /**
+     * this function gets mode from the user 1 for auto-game 0 for manual-game.
+     * this function buils a new GameClient, if the mode is 1 the function play the auto game and create a new thread.
+     * if the mode is 0 the function update the game and the graph of this class then it play the manual game and create a new thread.
+     * @param mode
+     */
 
     public void gameMode (int mode)
     {
@@ -106,6 +92,23 @@ public class MyGameGUI extends Thread {//implements Runnable {
         }
     }
 
+    /**
+     * this function gets level, calls the function set_manual_game to build the game.
+     * then the game and the thread start.
+     * @param level
+     */
+    public void start_manual_game(int level) {
+        set_manual_game(level);
+        game.startGame();
+        t.start();
+        StdDraw.g = this;
+    }
+
+    /**
+     * this function gets level and draw it's graph and fruits.
+     * than the user choose where to place robots.
+     * @param level
+     */
     public void set_manual_game(int level)
     {
         drawGraph((DGraph)this.g);
@@ -137,12 +140,11 @@ public class MyGameGUI extends Thread {//implements Runnable {
         drawRobots();
         StdDraw.g = this;
     }
-    public void start_manual_game(int level) {
-        set_manual_game(level);
-        game.startGame();
-        t.start();
-        StdDraw.g = this;
-    }
+
+    /**
+     * this function moves the robot by the user choices.
+     * Each time the robot reaches a certain node, the user has the option to choose from a list of neighbors to which node to move.
+     */
     public void moveRobotsManually()
     {
         JFrame roby = new JFrame();
@@ -154,13 +156,17 @@ public class MyGameGUI extends Thread {//implements Runnable {
                             JOptionPane.PLAIN_MESSAGE, null, neighbors1, neighbors1[0]);
                     int n = (Integer)s;
                     this.game.chooseNextEdge(rob.id, n);
-                    System.out.println("after choose");
                 }
                 StdDraw.g = this;
             }
         }
     }
-    //check which robot was pressed return robot id
+
+
+    /**
+     * this function returns the src of the robot that the user clicked on.
+     * @return
+     */
     public int robotPressed()
     {
         try {
@@ -194,6 +200,12 @@ public class MyGameGUI extends Thread {//implements Runnable {
         }
         return -1;
     }
+
+    /**
+     * this function returns list of neighbors for given src.
+     * @param robSrc
+     * @return
+     */
     public Object[] checkNeighbors (int robSrc)
     {
         Object[] neighbors2 = new Object[g.getE(robSrc).size()];
@@ -207,6 +219,41 @@ public class MyGameGUI extends Thread {//implements Runnable {
         return neighbors2;
     }
 
+    /**
+     * this function prints to the frame the score and the time-to-end.
+     */
+    private void scoreAndTimer() {
+        try {
+            String gameInfo = gameClient.game.toString();
+            JSONObject line = new JSONObject(gameInfo);
+            JSONObject ttt = line.getJSONObject("GameServer");
+            int score = ttt.getInt("grade");
+            int moves = ttt.getInt("moves");
+            StdDraw.setPenColor(new Color(9,30,80));
+            StdDraw.setPenRadius(0.4);
+            Font font = new Font("Arial", Font.BOLD, 20);
+            StdDraw.setFont(font);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() , "Score : " + score);
+            StdDraw.setPenColor(new Color(14,92,35));
+            StdDraw.setPenRadius(0.4);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max()+ 0.0003 ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
+            StdDraw.setPenRadius(0.015);
+            StdDraw.setPenColor(new Color(142,17,17));
+            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()+ 0.0001,0.0014,0.0004);
+            StdDraw.setPenColor(new Color(255,85,0));
+            StdDraw.text(rangeX.get_min()+0.00005, rangeY.get_max()+0.0005 ,"Level: "+currLevel);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        StdDraw.g = this;
+    }
+
+
+    /**
+     * this function gets graph and draw it on frame.
+     * @param g
+     */
     public void drawGraph(DGraph g) {
         StdDraw.clear();
         StdDraw.enableDoubleBuffering();
@@ -242,6 +289,9 @@ public class MyGameGUI extends Thread {//implements Runnable {
         scoreAndTimer();
     }
 
+    /**
+     * this function updates the fruits list and than draw all the fruits.
+     */
     public void drawFruits ()
     {
         if (isAutoMode) {
@@ -263,7 +313,9 @@ public class MyGameGUI extends Thread {//implements Runnable {
             StdDraw.picture(f.location.x() , f.location.y() , f.getImg() , 0.0005 , 0.0004);
         }
     }
-
+    /**
+     * this function updates the robots list and than draw all the robots.
+     */
     public void drawRobots()
     {
         if (isAutoMode) {
@@ -281,6 +333,10 @@ public class MyGameGUI extends Thread {//implements Runnable {
         }
     }
 
+    /**
+     * this function returns the range of x. calculate by graph coordinates.
+     * @return
+     */
     private Range range_x() {
         Range range;
         if (this.gameClient.g.getV().size() == 0) {
@@ -302,7 +358,10 @@ public class MyGameGUI extends Thread {//implements Runnable {
         this.rangeX = range;
         return range;
     }
-
+    /**
+     * this function returns the range of y. calculate by graph coordinates.
+     * @return
+     */
     private Range range_y() {
         Range range;
         if (this.gameClient.g.getV().size() == 0) {
@@ -324,6 +383,10 @@ public class MyGameGUI extends Thread {//implements Runnable {
         this.rangeY = range;
         return range;
     }
+
+    /**
+     * this function updates the fruits list.
+     */
     public void initFruits(){
         this.fruits.clear();
         List<String> fruitsString = this.game.getFruits();
@@ -335,6 +398,9 @@ public class MyGameGUI extends Thread {//implements Runnable {
         this.fruits.sort((o1, o2) -> (int)(o2.getValue())-(int)(o1.getValue()));
     }
 
+    /**
+     * this function updates the robots list.
+     */
     public void initRobots()
     {
         this.robots.clear();
@@ -345,7 +411,10 @@ public class MyGameGUI extends Thread {//implements Runnable {
         }
     }
 
-
+    /**
+     * this function is the thread function, it runs both modes by the user choice.
+     *
+     */
     @Override
     public void run() {
         if (isAutoMode)
