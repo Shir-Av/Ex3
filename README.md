@@ -59,5 +59,10 @@ This class represents a Graphical User Interface - GUI of the game.
 In this class the manual game scenario is realized.
 This class uses a "server" (jar file) named GameServer, which we perform in-game operations.
 
+- KML_Logger:
+
+This class allows you to export the graph, bots and fruits to a KML file
+
+
 
 **for more info of the project go to wiki.**
