@@ -28,6 +28,11 @@ public class DGraph implements graph, Serializable {
 		this.EDGE_SIZE=0;
 
 	}
+
+	/**
+	 * creates a dgraph from a given string
+	 * @param sGraph
+	 */
 	public DGraph(String sGraph) {
 		try {
 			this.nodes = new HashMap<Integer,node_data>();
@@ -82,6 +87,10 @@ public class DGraph implements graph, Serializable {
 		else return graph.get(src).get(dest);
 	}
 
+	/**
+	 * adds a new node to the graph
+	 * @param n
+	 */
 	@Override
 	public void addNode(node_data n)
 	{
@@ -93,6 +102,12 @@ public class DGraph implements graph, Serializable {
 		else System.out.println("ERROR: this key node already exist");
 	}
 
+	/**
+	 * Connect an edge with weight w between node src to node dest.
+	 * @param src - the source of the edge.
+	 * @param dest - the destination of the edge.
+	 * @param w - positive weight representing the cost (aka time, price, etc) between src-->dest.
+	 */
 	@Override
 	public void connect(int src, int dest, double w)
 	{
@@ -119,12 +134,21 @@ public class DGraph implements graph, Serializable {
 
 	}
 
+	/**
+	 *
+	 * @return a collection of all the nodes
+	 */
 	@Override
 	public Collection<node_data> getV()
 	{
 		return this.nodes.values();
 	}
 
+	/**
+	 *
+	 * @param node_id
+	 * @return a collection of the edgws in the graph
+	 */
 	@Override
 	public Collection<edge_data> getE(int node_id)
 	{
@@ -142,6 +166,11 @@ public class DGraph implements graph, Serializable {
 		else return graph.get(node_id).values();
 	}
 
+	/**
+	 * removes a given node cy the key id
+	 * @param key
+	 * @return
+	 */
 	@Override
 	public node_data removeNode(int key)
 	{
@@ -173,6 +202,12 @@ public class DGraph implements graph, Serializable {
 		return nodes.remove(key);
 	}
 
+	/**
+	 * removes a given edge  by a given edge src and edge dest
+	 * @param src
+	 * @param dest
+	 * @return
+	 */
 	@Override
 	public edge_data removeEdge(int src, int dest)
 	{

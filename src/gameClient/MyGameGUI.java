@@ -352,7 +352,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
         {
             while (gameClient.game.isRunning()) {
                 try {
-                    sleep(77);
+                    sleep(83);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -378,9 +378,6 @@ public class MyGameGUI extends Thread {//implements Runnable {
                 drawRobots();
                 StdDraw.show();
             }
-
-
-
             System.out.println("Game over " + this.game.toString());
 
         }

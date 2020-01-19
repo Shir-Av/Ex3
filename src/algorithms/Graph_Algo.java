@@ -32,6 +32,10 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 
 	}
 
+	/**
+	 * this function  Init a graph from file
+	 * @param file_name
+	 */
 	@Override
 	public void init(String file_name)
 	{
@@ -57,6 +61,10 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 
 	}
 
+	/**
+	 *  Saves the graph to a file.
+	 * @param file_name
+	 */
 	@Override
 	public void save(String file_name)
 	{
@@ -80,6 +88,12 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 
 	}
 
+	/**
+	 *  Returns true if and only if (iff) there is a valid path from EVREY node to each
+	 *  * other node. NOTE: assume directional graph - a valid path (a-->b) does NOT imply a valid path (b-->a).
+	 * @return
+	 */
+
 	@Override
 	public boolean isConnected()
 	{
@@ -89,7 +103,7 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		}
 		if (this.hasEdges())
 		{
-			for (node_data n : this.graph_algo.getV())
+			for (node_data n : this.graph_algo.getV()) //runs on all the nodes in the graph
 			{
 				this.initTag();
 				int src = n.getKey();
@@ -114,6 +128,10 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		}
 	}
 
+	/**
+	 * this function checks if a given node has edge
+	 * @return
+	 */
 	private boolean hasEdges()
 	{
 		for (node_data n : this.graph_algo.getV())
@@ -128,6 +146,12 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return true;
 	}
 
+	/**
+	 * checks if a given node is conected to all other nodes
+	 * @param src
+	 * @param newCol
+	 * @return
+	 */
 	private boolean hasAllPaths(int src, ArrayList<Integer> newCol)
 	{
 		Collection<edge_data> temp = this.graph_algo.getE(src);
@@ -160,6 +184,12 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return false;
 	}
 
+	/**
+	 * returns the length of the shortest path between src to dest
+	 * @param src - start node
+	 * @param dest - end (target) node
+	 * @return
+	 */
 	@Override
 	public double shortestPathDist(int src, int dest)
 	{
@@ -192,6 +222,10 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return srcNode.getWeight();
 	}
 
+	/**
+	 * // returns the node with the min weight and tag 0 in the collection
+	 * @return
+	 */
 	private node_data minWeight () // returns the node with the min weight and tag 0 in the collection
 	{
 		Collection <node_data> node = this.graph_algo.getV();
@@ -207,6 +241,13 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return tmpN;
 	}
 
+	/**
+	 *  returns the the shortest path between src to dest - as an ordered List of nodes:
+	 * 	 src--> n1-->n2-->...dest
+	 * @param src - start node
+	 * @param dest - end (target) node
+	 * @return
+	 */
 	@Override
 	public List<node_data> shortestPath(int src, int dest)
 	{
@@ -224,6 +265,11 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return path;
 	}
 
+	/**
+	 * computes a relatively short path which visit each node in the targets List in that order
+	 * @param targets
+	 * @return list of nodes in that path
+	 */
 	@Override
 	public List<node_data> TSP(List<Integer> targets)
 	{
@@ -269,6 +315,10 @@ public class Graph_Algo implements graph_algorithms, Serializable{
 		return TSPlist;
 	}
 
+	/**
+	 * make a deep copy oc the graph
+	 * @return
+	 */
 	@Override
 	public graph copy()
 	{

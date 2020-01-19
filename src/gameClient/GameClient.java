@@ -26,11 +26,16 @@ public class GameClient extends Thread{
     public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
     MyGameGUI myGui;
 
+    /**
+     * build new game by calling the initGraph function
+     */
     public GameClient (int level)
     {
         initGraph(level);
     }
-
+    /**
+     * this function start new automatic game.
+     */
     public void startAutomaticGame (int level){
         set_automatic_game(level);
         game.startGame();
@@ -39,7 +44,10 @@ public class GameClient extends Thread{
         System.out.println("Game Over: " + results);
     }
 
-
+    /**
+     * this function set and update the fruits and the robots lists.
+     * this function also gives the robots their first position (closest to the fruits).
+     */
     public void set_automatic_game(int level)
     {
         int robotNum = 0;
@@ -65,7 +73,9 @@ public class GameClient extends Thread{
             this.robots.add(r);
         }
     }
-
+    /**
+     * this function gets information about the current level and initializing the graph
+     */
     public void initGraph(int level) {
         this.game = Game_Server.getServer(level);
         String graph = Game_Server.getServer(level).getGraph();
