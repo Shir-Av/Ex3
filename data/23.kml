@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>Game stage :23</name>
+ <Style id="node">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal3/icon35.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="fruit_-1">
+      <IconStyle>
+        <Icon>
+          <href>https://ya-webdesign.com/images250_/google-map-icon-png-5.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="fruit_1">
+      <IconStyle>
+        <Icon>
+          <href>https://static.wixstatic.com/media/20c715_d3b8c7feee414b479ebfcfa9e6ee5bf7~mv2.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="robot">
+      <IconStyle>
+        <Icon>
+          <href>https://toppng.com/public/uploads/thumbnail/in-location-map-icon-navigation-symbol-ma-google-maps-marker-blue-11562916561ezoahrqazu.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style>    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.100</when>
+      </TimeStamp>
+      <styleUrl>#fruit_1</styleUrl>
+      <Point>
+        <coordinates>35.2036278051956,32.10225131838408,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.100</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.19299270998671,32.1055979074169,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.100</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.210782410051245,32.102803331273684,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.100</when>
+      </TimeStamp>
+      <styleUrl>#fruit_1</styleUrl>
+      <Point>
+        <coordinates>35.18752225008876,32.10379910146876,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.101</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.192831596416106,32.10779138402466,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.101</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.210465784310564,32.10265552605042,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.101</when>
+      </TimeStamp>
+      <styleUrl>#robot.png</styleUrl>
+      <Point>
+        <coordinates>35.203259591606134,32.1031462,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.101</when>
+      </TimeStamp>
+      <styleUrl>#robot.png</styleUrl>
+      <Point>
+        <coordinates>35.19256128652139,32.104563702521006,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T18:50:03.102</when>
+      </TimeStamp>
+      <styleUrl>#robot.png</styleUrl>
+      <Point>
+        <coordinates>35.20960640355125,32.103364277310924,0.0</coordinates>
+      </Point>
+    </Placemark>
+  
+</Document>
+</kml>
