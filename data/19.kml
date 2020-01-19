@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>Game stage :19</name>
+ <Style id="node">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal3/icon35.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="fruit_-1">
+      <IconStyle>
+        <Icon>
+          <href>https://ya-webdesign.com/images250_/google-map-icon-png-5.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="fruit_1">
+      <IconStyle>
+        <Icon>
+          <href>https://static.wixstatic.com/media/20c715_d3b8c7feee414b479ebfcfa9e6ee5bf7~mv2.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style> <Style id="robot">
+      <IconStyle>
+        <Icon>
+          <href>https://toppng.com/public/uploads/thumbnail/in-location-map-icon-navigation-symbol-ma-google-maps-marker-blue-11562916561ezoahrqazu.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+    </Style>    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T19:25:44.699</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20622459040522,32.101281022067994,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T19:25:44.699</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20392770907119,32.10833067124629,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T19:25:44.699</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20622459040522,32.101281022067994,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-19T19:25:44.699</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20392770907119,32.10833067124629,0.0</coordinates>
+      </Point>
+    </Placemark>
+  
+</Document>
+</kml>
