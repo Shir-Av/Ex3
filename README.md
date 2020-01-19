@@ -19,7 +19,7 @@ This assignment data structures and algorithms are based on previous project Ex2
     In this mode the game will work automatically according to algorithms we have developed to gain the most points for this stage.
     The robots will be strategically placed, according to an algorithm, at the Node closest to the fruit and will move to the next Node     according to a calculation of the fruit closest to them.
     
-    <img width="952" alt="automatic" src="https://user-images.githubusercontent.com/58072903/72681339-2a429480-3acb-11ea-903c-200d793ab949.png">
+<img width="949" alt="1" src="https://user-images.githubusercontent.com/58072903/72685486-478b5900-3af3-11ea-940d-ccdb539616d4.png">
     
 4. **In manual mode :**
 
@@ -33,7 +33,12 @@ After selecting the stage Please follow these steps:
 
 -  After the initial placement of the robots, click on each robot and select its next target according to the possible "neighbors" list.
 
-<img width="949" alt="manual 2" src="https://user-images.githubusercontent.com/58072903/72681895-af7c7800-3ad0-11ea-86e7-cad7eb2c4976.png">
+<img width="949" alt="3" src="https://user-images.githubusercontent.com/58072903/72685578-25460b00-3af4-11ea-9300-f58971205149.png">
+
+- At the end of the game a window will open and show the score.
+
+<img width="948" alt="2" src="https://user-images.githubusercontent.com/58072903/72685519-b1a3fe00-3af3-11ea-8175-8aa9c7d37af8.png">
+
 
 - **Note that each stage is timed and the goal of the game is to get the highest score by eating as much fruit as possible.**
 
