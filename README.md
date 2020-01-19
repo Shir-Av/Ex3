@@ -1,8 +1,14 @@
 # The Maze Of Waze
 
 
-This project represents a directed graph.
-The Main purpose of this project is to Create directed weighted graph, Display the graph on graphic user interface and Run algorithms on the graph.
+This project represents a game where a group of robots needs to perform movement tasks on a weighted graph in order to collect fruits (of varying value) so that all the fruits collected will be of maximum value.
+This assignment data structures and algorithms are based on previous project Ex2: https://github.com/Shir-Av/Ex2 .
+
+**How To Play**
+
+
+
+
 
 **The project includes the following class:**
 
