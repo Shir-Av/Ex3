@@ -29,6 +29,7 @@ package utils;
 
 import gameClient.GameClient;
 import gameClient.MyGameGUI;
+import org.json.JSONException;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -615,7 +616,7 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	private static StdDraw std = new StdDraw();
 
 	// the frame for drawing to the screen
-	private static JFrame frame;
+	public static JFrame frame;
 
 	// mouse state
 	private static boolean isMousePressed = false;
@@ -712,17 +713,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
 	// create the menu bar (changed to private)
 	private static JMenuBar createMenuBar() {
-			JMenuBar MenuBar = new JMenuBar();
-			JMenu play = new JMenu("play");
-			play.addActionListener(std);
-			MenuBar.add(play);
-			JMenuItem Start_manual_game = new JMenuItem("Start manual game");
-			Start_manual_game.addActionListener(std);
-			play.add(Start_manual_game);
-			JMenuItem Start_automatic_game = new JMenuItem("Start automatic game");
-			Start_automatic_game.addActionListener(std);
-			play.add(Start_automatic_game);
-			//this.addMouseListener(this);
+		JMenuBar MenuBar = new JMenuBar();
+		JMenu play = new JMenu("play");
+		play.addActionListener(std);
+		MenuBar.add(play);
+		JMenuItem Start_manual_game = new JMenuItem("Start manual game");
+		Start_manual_game.addActionListener(std);
+		play.add(Start_manual_game);
+		JMenuItem Start_automatic_game = new JMenuItem("Start automatic game");
+		Start_automatic_game.addActionListener(std);
+		play.add(Start_automatic_game);
+		//this.addMouseListener(this);
 		return MenuBar;
 	}
 

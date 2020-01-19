@@ -1,7 +1,6 @@
 package gameClient;
 import Server.game_service;
 import algorithms.Graph_Algo;
-import com.sun.corba.se.impl.orbutil.graph.Graph;
 import dataStructure.*;
 import elements.Fruit;
 import elements.Robot;
@@ -21,7 +20,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
     public game_service game;
     private ArrayList<Fruit> fruits = new ArrayList<>();
     private ArrayList<Robot> robots = new ArrayList<>();
-    private int MC;
+    private static int currLevel;
     public static Thread t;
     graph g = new DGraph();
     private Graph_Algo gAlgo = new Graph_Algo();
@@ -30,6 +29,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
     boolean graphInit = false;
     boolean isAutoMode = false;
     public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
+    private static KML_Logger log;
 
 
     public MyGameGUI()
@@ -56,17 +56,20 @@ public class MyGameGUI extends Thread {//implements Runnable {
             JSONObject line = new JSONObject(gameInfo);
             JSONObject ttt = line.getJSONObject("GameServer");
             int score = ttt.getInt("grade");
+            int moves = ttt.getInt("moves");
             StdDraw.setPenColor(new Color(9,30,80));
             StdDraw.setPenRadius(0.4);
             Font font = new Font("Arial", Font.BOLD, 20);
             StdDraw.setFont(font);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() - 0.0003, "Score : " + score);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() , "Score : " + score);
             StdDraw.setPenColor(new Color(14,92,35));
             StdDraw.setPenRadius(0.4);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
+            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max()+ 0.0003 ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
             StdDraw.setPenRadius(0.015);
             StdDraw.setPenColor(new Color(142,17,17));
-            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()-0.00009,0.0014,0.0004);
+            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()+ 0.0001,0.0014,0.0004);
+            StdDraw.setPenColor(new Color(255,85,0));
+            StdDraw.text(rangeX.get_min()+0.00005, rangeY.get_max()+0.0005 ,"Level: "+currLevel);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -78,18 +81,21 @@ public class MyGameGUI extends Thread {//implements Runnable {
     {
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
+        currLevel = level;
         this.gameClient = new GameClient(level);
         StdDraw.g = this;
         graphInit = true;
         initGUI();
 
         if (mode == 1){
+            log =new KML_Logger(level);
             isAutoMode = true;
             t = new Thread(this);
             gameClient.startAutomaticGame(level);
             StdDraw.g = this;
         }
         else {
+            log =new KML_Logger(level);
             this.game = this.gameClient.game;
             this.g = this.gameClient.g;
             initFruits();
@@ -228,7 +234,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
                 StdDraw.setFont(StdDraw.EDGES_FONT);
                 StdDraw.text(srcX * 0.3 + destX * 0.7 , srcY * 0.3 + destY * 0.7 , weight);
                 StdDraw.setPenColor(new Color(156,246,111));
-               // StdDraw.setPenRadius(0.15);
+                // StdDraw.setPenRadius(0.15);
                 StdDraw.filledCircle(srcX * 0.2 + destX * 0.8, srcY * 0.2 + destY * 0.8, sX*0.07);
 
             }
@@ -248,6 +254,12 @@ public class MyGameGUI extends Thread {//implements Runnable {
 
         for (Fruit f : this.fruits)
         {
+            if(f.getType() == 1){
+                MyGameGUI.log.location_sampling("fruit_1",f.getLocation().toString());
+            }
+            else{
+                MyGameGUI.log.location_sampling("fruit_-1",f.getLocation().toString());
+            }
             StdDraw.picture(f.location.x() , f.location.y() , f.getImg() , 0.0005 , 0.0004);
         }
     }
@@ -264,12 +276,13 @@ public class MyGameGUI extends Thread {//implements Runnable {
 
         for (Robot r : this.robots)
         {
+            MyGameGUI.log.location_sampling("robot.png",r.getLocation().toString());
             StdDraw.picture(r.location.x() , r.location.y() , r.getImg() , 0.0011 , 0.0010);
         }
     }
 
     private Range range_x() {
-    Range range;
+        Range range;
         if (this.gameClient.g.getV().size() == 0) {
             range = new Range(-100,100);
             this.rangeX = range;
@@ -339,7 +352,7 @@ public class MyGameGUI extends Thread {//implements Runnable {
         {
             while (gameClient.game.isRunning()) {
                 try {
-                    sleep(50);
+                    sleep(77);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -365,8 +378,23 @@ public class MyGameGUI extends Thread {//implements Runnable {
                 drawRobots();
                 StdDraw.show();
             }
+
+
+
             System.out.println("Game over " + this.game.toString());
+
         }
+        try {
+            String gameInfo = gameClient.game.toString();
+            JSONObject line = new JSONObject(gameInfo);
+            JSONObject ttt = line.getJSONObject("GameServer");
+            int score = ttt.getInt("grade");
+            int moves = ttt.getInt("moves");
+            JOptionPane.showMessageDialog(StdDraw.frame,"GAME OVER \n  Your grade is: "+ score + ".\n You made "+moves+" moves.");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        log.KML_END();
     }
 
     public static void main(String[] args) {
@@ -375,4 +403,4 @@ public class MyGameGUI extends Thread {//implements Runnable {
 
     }
 
-}
+    }
