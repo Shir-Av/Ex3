@@ -30,6 +30,7 @@ package utils;
 import Server.Game_Server;
 import gameClient.GameClient;
 import gameClient.MyGameGUI;
+import gameClient.SimpleDB;
 import org.json.JSONException;
 
 import java.awt.BasicStroke;
@@ -67,6 +68,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.NoSuchElementException;
@@ -479,6 +481,22 @@ import javax.swing.*;
  */
 public final class StdDraw implements ActionListener, MouseListener, MouseMotionListener, KeyListener {
 	public static MyGameGUI g;
+	private HashMap<Integer, HashMap<Integer, Integer>>log;
+	private HashMap<Integer, Integer> numOfGame;
+
+
+	private int placeNum(int id,int level) {
+		if(log.containsKey(id)) {
+			int myScore = log.get(id).get(level);
+			int counter = 1;
+			for(Integer ID : log.keySet()) {
+				if(log.get(ID).get(level)>myScore)
+					counter++;
+			}
+			return counter;
+		}
+		return log.size();
+	}
 	/**
 	 *  The color black.
 	 */
@@ -718,9 +736,18 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenu play = new JMenu("play");
 		play.addActionListener(std);
 		MenuBar.add(play);
-		/*JMenuItem logIn = new JMenuItem("Log in");
-		logIn.addActionListener(std);
-		play.add(logIn);*/
+		JMenu info = new JMenu("Info");
+		info.addActionListener(std);
+		MenuBar.add(info);
+		JMenuItem best_score = new JMenuItem("My best score");
+		best_score.addActionListener(std);
+		info.add(best_score);
+		JMenuItem numOfGames = new JMenuItem("Number of games");
+		numOfGames.addActionListener(std);
+		info.add(numOfGames);
+		JMenuItem rateINclass = new JMenuItem("Rate in class");
+		rateINclass.addActionListener(std);
+		info.add(rateINclass);
 		JMenuItem Start_manual_game = new JMenuItem("Start manual game");
 		Start_manual_game.addActionListener(std);
 		play.add(Start_manual_game);
@@ -1660,17 +1687,57 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	public void actionPerformed(ActionEvent e) {
 
 		String str = e.getActionCommand();
-		/*if (str.equals("Log in")){
-			String idInput = JOptionPane.showInputDialog(null, "Enter your ID number: ");
-			int idNumber = -1;
+		this.log = SimpleDB.getLog();
+		this.numOfGame = SimpleDB.getNumOfGames();
+		if (str.equals("My best score")){
+			String toID = JOptionPane.showInputDialog(null, "please enter your id number");
+			int id_num = -1;
 			try {
-				idNumber = Integer.parseInt(idInput);
+				id_num = Integer.parseInt(toID);
 			} catch (Exception e2) {
-				JOptionPane.showMessageDialog(null , "Error, please try again");
+				JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
 			}
-			Game_Server.login(idNumber);
+			String toL = JOptionPane.showInputDialog(null, "please enter level:");
+			int level = -1;
+			try {
+				level = Integer.parseInt(toL);
+			} catch (Exception e2) {
+				JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
+			}
+			if(log.containsKey(id_num))
+				JOptionPane.showMessageDialog(null, "your best score is: "+log.get(id_num).get(level));
+			else
+				JOptionPane.showMessageDialog(null, "your best score is: 0");
+		}
+		if (str.equals("Number of games")){
+			String toID = JOptionPane.showInputDialog(null, "please enter your id number");
+			int id_num = -1;
+			try {
+				id_num = Integer.parseInt(toID);
+			} catch (Exception e2) {
+				JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
+			}
+			JOptionPane.showMessageDialog(null, "you played " +this.numOfGame.get(id_num)+" games");
+		}
+		if (str.equals("Rate in class")){
+			String toID = JOptionPane.showInputDialog(null, "please enter your id number");
+			int id_num = -1;
+			try {
+				id_num = Integer.parseInt(toID);
+			} catch (Exception e2) {
+				JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
+			}
+			String toL = JOptionPane.showInputDialog(null, "please enter level:");
+			int level = -1;
+			try {
+				level = Integer.parseInt(toL);
+			} catch (Exception e2) {
+				JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
+			}
 
-		}*/
+			double place = placeNum(id_num,level);
+			JOptionPane.showMessageDialog(null, "your place in class is :" +place);
+		}
 		if (str.equals("Start manual game"))
 		{
 			g.gameMode(0);
@@ -1680,7 +1747,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 			g.gameMode(1);
 		}
 	}
-
 
 	/***************************************************************************
 	 *  Mouse interactions.

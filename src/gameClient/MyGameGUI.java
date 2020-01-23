@@ -21,7 +21,7 @@ public class MyGameGUI extends Thread {
     public game_service game;
     private ArrayList<Fruit> fruits = new ArrayList<>();
     private ArrayList<Robot> robots = new ArrayList<>();
-    private static int currLevel;
+    public static int currLevel;
     public static Thread t;
     graph g = new DGraph();
     private Range rangeX;
@@ -30,6 +30,7 @@ public class MyGameGUI extends Thread {
     boolean isAutoMode = false;
     public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
     private static KML_Logger log;
+
 
     /**
      * this function calls the init gui function.
@@ -327,11 +328,11 @@ public class MyGameGUI extends Thread {
     public void drawFruits ()
     {
         if (isAutoMode) {
-            //this.gameClient.initFruits();
+            this.gameClient.initFruits();
             this.fruits = gameClient.fruits;
         }
         else{
-          //  initFruits();
+            initFruits();
         }
 
         for (Fruit f : this.fruits)
@@ -351,11 +352,11 @@ public class MyGameGUI extends Thread {
     public void drawRobots()
     {
         if (isAutoMode) {
-           // gameClient.initRobots();
+            gameClient.initRobots();
             this.robots = gameClient.robots;
         }
         else{
-            //initRobots();
+            initRobots();
         }
 
         for (Robot r : this.robots)
@@ -443,33 +444,41 @@ public class MyGameGUI extends Thread {
         }
     }
     public int delayT()
-    {   //int n = 90;
-        int n = 110;
-        if(gameClient.game.getRobots().size() <  gameClient.game.getFruits().size()/3)
-        {
-            n = 120;
+    {  int n = 110;
+        if(gameClient.gameLevel == 23){
+            int m = 60;
+            edge_data e = new EdgeData();
+            for (Robot r : gameClient.robots) {
+                for (Fruit f : gameClient.fruits) {
+                    e = gameClient.edgeWithFruit(f);
+                    if (e.getSrc() == r.getSrc() && e.getDest() == r.getDest()) {
+                        n = 20;
+                        return m;
+                    }
+                }
+            }
+            return m;
         }
-        if (gameClient.gPic.equals("data/A2"))
-        {
-            return 90;
-        }
-        //else
-        if (gameClient.game.getRobots().size() ==  gameClient.game.getFruits().size() && (gameClient.game.getRobots().size() > 1 ))
-        {
-            //System.out.println("here ");
-            n = 92;
-        }
+        else {
+            if (gameClient.game.getRobots().size() < gameClient.game.getFruits().size() / 3) {
+                n = 120;
+            }
+            if (gameClient.gPic.equals("data/A2")) {
+                return 90;
+            }
 
-        edge_data e = new EdgeData();
-        for(Robot r :gameClient.robots)
-        {
-            for(Fruit f:gameClient.fruits)
-            {
-                e = gameClient.edgeWithFruit(f);
-                if(e.getSrc() == r.getSrc() && e.getDest() == r.getDest())
-                {
-                    n = 40;
-                    return n;
+            if (gameClient.game.getRobots().size() == gameClient.game.getFruits().size() && (gameClient.game.getRobots().size() > 1)) {
+                n = 92;
+            }
+
+            edge_data e = new EdgeData();
+            for (Robot r : gameClient.robots) {
+                for (Fruit f : gameClient.fruits) {
+                    e = gameClient.edgeWithFruit(f);
+                    if (e.getSrc() == r.getSrc() && e.getDest() == r.getDest()) {
+                        n = 50;
+                        return n;
+                    }
                 }
             }
         }
@@ -486,8 +495,8 @@ public class MyGameGUI extends Thread {
         {
             while (gameClient.game.isRunning()) {
                 //this.gameClient.game.move();
-                gameClient.initFruits();
-                gameClient.initRobots();
+               // gameClient.initFruits();
+                //gameClient.initRobots();
                 this.gameClient.moveRobots();
                 drawGraph((DGraph) gameClient.g);
                 drawFruits();

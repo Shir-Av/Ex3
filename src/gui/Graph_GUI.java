@@ -2,7 +2,9 @@ package gui;
 
 import algorithms.Graph_Algo;
 import algorithms.graph_algorithms;
+import com.sun.corba.se.impl.orbutil.graph.Graph;
 import dataStructure.*;
+import org.junit.jupiter.api.BeforeEach;
 import utils.Point3D;
 
 import javax.swing.*;
@@ -466,4 +468,36 @@ public class Graph_GUI  extends JFrame implements ActionListener, MouseListener{
             JOptionPane.showMessageDialog(this, "ERROR: " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
         }
     }
+    public static void main(String[] args) {
+        Graph_Algo gAlgo ;
+        graph g;
+        NodeData n0 =new NodeData(0, new Point3D(-10, 4));
+        NodeData n1 =new NodeData(1, new Point3D(-5, 10));
+        NodeData n2 =new NodeData(2, new Point3D(10, 10));
+        NodeData n3 =new NodeData(3, new Point3D(9, -1));
+        NodeData n4 =new NodeData(4, new Point3D(-4, 0));
+
+
+            g = new DGraph();
+            gAlgo = new Graph_Algo();
+            g.addNode(n0);
+            g.addNode(n1);
+            g.addNode(n2);
+            g.addNode(n3);
+            g.addNode(n4);
+            g.connect(0, 1, 10);
+            g.connect(0, 4, 5);
+            g.connect(1, 4, 2);
+            g.connect(1, 2, 1);
+            g.connect(2, 3, 4);
+            g.connect(3, 0, 7);
+            g.connect(3, 2, 6);
+            g.connect(4, 1, 3);
+            g.connect(4, 2, 9);
+            g.connect(4, 3, 2);
+            gAlgo.init(g);
+
+        Graph_GUI gg = new Graph_GUI(g);
+    }
 }
+

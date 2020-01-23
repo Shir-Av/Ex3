@@ -22,7 +22,7 @@ public class GameClient extends Thread{
     public ArrayList<Fruit> fruits;
     public ArrayList<Robot> robots;
     graph g = new DGraph();
-    private static int gameLevel;
+    public static int gameLevel;
     public ArrayList<edge_data> ef = new ArrayList<>();
     private Graph_Algo gAlgo = new Graph_Algo();
     public static final double EPS1 = 0.0000009, EPS2 = EPS1+EPS1, EPS=EPS2;
@@ -206,7 +206,6 @@ public class GameClient extends Thread{
         edge_data e = g.getEdge(ansSrc,ansDest);
         if (ef.contains(e)){
             e = g.getEdge(ansSrc2,ansDest2);
-            System.out.println("chose second edge:  "+ e);
         }
         if (!ef.contains(e)) {
             ef.add(e);
@@ -273,14 +272,11 @@ public class GameClient extends Thread{
                     }
                     if (b && i == 1 && d == dest)
                     {
-                        // System.out.println("want to go to  "+ dest+ "  inter number : "+i+ "  robot number :  "+ rId);
-                        //  System.out.println("iter 1 on -1 !!!!!!!!");
                         game.chooseNextEdge(rId, 24);
-
                     }
 
-                    System.out.println("Turn to node: "+dest+"  time to end:"+(time/1000));
-                    System.out.println(ttt);
+                  /*  System.out.println("Turn to node: "+dest+"  time to end:"+(time/1000));
+                    System.out.println(ttt);*/
                 } catch (JSONException e) {
                     System.out.println("fail here");
                     e.printStackTrace();
