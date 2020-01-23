@@ -27,6 +27,7 @@ package utils;
  *
  ******************************************************************************/
 
+import Server.Game_Server;
 import gameClient.GameClient;
 import gameClient.MyGameGUI;
 import org.json.JSONException;
@@ -717,12 +718,16 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		JMenu play = new JMenu("play");
 		play.addActionListener(std);
 		MenuBar.add(play);
+		/*JMenuItem logIn = new JMenuItem("Log in");
+		logIn.addActionListener(std);
+		play.add(logIn);*/
 		JMenuItem Start_manual_game = new JMenuItem("Start manual game");
 		Start_manual_game.addActionListener(std);
 		play.add(Start_manual_game);
 		JMenuItem Start_automatic_game = new JMenuItem("Start automatic game");
 		Start_automatic_game.addActionListener(std);
 		play.add(Start_automatic_game);
+
 		//this.addMouseListener(this);
 		return MenuBar;
 	}
@@ -1655,7 +1660,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 	public void actionPerformed(ActionEvent e) {
 
 		String str = e.getActionCommand();
+		/*if (str.equals("Log in")){
+			String idInput = JOptionPane.showInputDialog(null, "Enter your ID number: ");
+			int idNumber = -1;
+			try {
+				idNumber = Integer.parseInt(idInput);
+			} catch (Exception e2) {
+				JOptionPane.showMessageDialog(null , "Error, please try again");
+			}
+			Game_Server.login(idNumber);
 
+		}*/
 		if (str.equals("Start manual game"))
 		{
 			g.gameMode(0);

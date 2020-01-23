@@ -1,4 +1,5 @@
 package gameClient;
+import Server.Game_Server;
 import Server.game_service;
 import algorithms.Graph_Algo;
 import dataStructure.*;
@@ -46,12 +47,17 @@ public class MyGameGUI extends Thread {
      */
 
     public void initGUI() {
-        StdDraw.setCanvasSize(1900, 1000);
+        StdDraw.setCanvasSize(1300, 950);
         if (graphInit) {
-            rangeX = range_x();
+          /*  rangeX = range_x();
             rangeY = range_y();
             StdDraw.setXscale(rangeX.get_min() - 0.0007, rangeX.get_max() + 0.0007);
-            StdDraw.setYscale(rangeY.get_min() - 0.0007, rangeY.get_max() + 0.0007);
+            StdDraw.setYscale(rangeY.get_min() - 0.0007, rangeY.get_max() + 0.0007);*/
+            Range x = range_x();
+            Range y = range_y();
+            StdDraw.setXscale(x.get_min()-0.0009, x.get_max()+0.0009);
+            StdDraw.setYscale(y.get_min()-0.003, y.get_max()+0.003);
+
         }
         StdDraw.g=this;
     }
@@ -65,6 +71,31 @@ public class MyGameGUI extends Thread {
 
     public void gameMode (int mode)
     {
+        int num =-1;
+        Object Oserver= null;
+        String[] os = {"YES","NO" };
+        while(num == -1) {
+            try {
+                Oserver = JOptionPane.showInputDialog(null, "Do you want to connect?", "Message", JOptionPane.INFORMATION_MESSAGE, null, os, os[0]);
+            } catch (Exception eer) {
+                num = -1;
+            }
+            if (Oserver == "YES") {
+                String toLog = JOptionPane.showInputDialog(null, "please enter your id number");
+                int id_num = -1;
+                try {
+                    id_num = Integer.parseInt(toLog);
+                    num = 1;
+                } catch (Exception e2) {
+                    JOptionPane.showMessageDialog(null, "Error , you can enter only numbers. please try again");
+                }
+                Game_Server.login(id_num);
+                num = 1;
+            }
+            if (Oserver == "NO") {
+                break;
+            }
+        }
         String chooseLevel = JOptionPane.showInputDialog( "Please select level 0-23");
         int level = Integer.parseInt(chooseLevel);
         currLevel = level;
@@ -77,7 +108,7 @@ public class MyGameGUI extends Thread {
             log =new KML_Logger(level);
             isAutoMode = true;
             t = new Thread(this);
-            gameClient.startAutomaticGame(level);
+            gameClient.startAutomaticGame();
             StdDraw.g = this;
         }
         else {
@@ -233,15 +264,16 @@ public class MyGameGUI extends Thread {
             StdDraw.setPenRadius(0.4);
             Font font = new Font("Arial", Font.BOLD, 20);
             StdDraw.setFont(font);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max() , "Score : " + score);
+            StdDraw.text(rangeX.get_max()-0.001, rangeY.get_max()+ 0.0003 , "Score : " + score);
             StdDraw.setPenColor(new Color(14,92,35));
             StdDraw.setPenRadius(0.4);
-            StdDraw.text(rangeX.get_max()-0.0008, rangeY.get_max()+ 0.0003 ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
+            StdDraw.text(rangeX.get_max()-0.001, rangeY.get_max()+ 0.0006 ,"Time to end : " +gameClient.game.timeToEnd() / 1000);
             StdDraw.setPenRadius(0.015);
             StdDraw.setPenColor(new Color(142,17,17));
-            StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()+ 0.0001,0.0014,0.0004);
+            //StdDraw.rectangle(rangeX.get_max()-0.0009,rangeY.get_max()+ 0.0001,0.0014,0.0004);
             StdDraw.setPenColor(new Color(255,85,0));
             StdDraw.text(rangeX.get_min()+0.00005, rangeY.get_max()+0.0005 ,"Level: "+currLevel);
+            StdDraw.text(rangeX.get_min()+0.005, rangeY.get_max()+0.0005 ,"Moves: "+moves);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -295,11 +327,11 @@ public class MyGameGUI extends Thread {
     public void drawFruits ()
     {
         if (isAutoMode) {
-            this.gameClient.initFruits();
+            //this.gameClient.initFruits();
             this.fruits = gameClient.fruits;
         }
         else{
-            initFruits();
+          //  initFruits();
         }
 
         for (Fruit f : this.fruits)
@@ -319,17 +351,17 @@ public class MyGameGUI extends Thread {
     public void drawRobots()
     {
         if (isAutoMode) {
-            gameClient.initRobots();
+           // gameClient.initRobots();
             this.robots = gameClient.robots;
         }
         else{
-            initRobots();
+            //initRobots();
         }
 
         for (Robot r : this.robots)
         {
-            MyGameGUI.log.location_sampling("robot.png",r.getLocation().toString());
-            StdDraw.picture(r.location.x() , r.location.y() , r.getImg() , 0.0011 , 0.0010);
+            MyGameGUI.log.location_sampling("robot",r.getLocation().toString());
+            StdDraw.picture(r.location.x() , r.location.y() , r.getImg() , 0.0012 , 0.0010);
         }
     }
 
@@ -410,6 +442,39 @@ public class MyGameGUI extends Thread {
             this.robots.add(r);
         }
     }
+    public int delayT()
+    {   //int n = 90;
+        int n = 110;
+        if(gameClient.game.getRobots().size() <  gameClient.game.getFruits().size()/3)
+        {
+            n = 120;
+        }
+        if (gameClient.gPic.equals("data/A2"))
+        {
+            return 90;
+        }
+        //else
+        if (gameClient.game.getRobots().size() ==  gameClient.game.getFruits().size() && (gameClient.game.getRobots().size() > 1 ))
+        {
+            //System.out.println("here ");
+            n = 92;
+        }
+
+        edge_data e = new EdgeData();
+        for(Robot r :gameClient.robots)
+        {
+            for(Fruit f:gameClient.fruits)
+            {
+                e = gameClient.edgeWithFruit(f);
+                if(e.getSrc() == r.getSrc() && e.getDest() == r.getDest())
+                {
+                    n = 40;
+                    return n;
+                }
+            }
+        }
+        return n;
+    }
 
     /**
      * this function is the thread function, it runs both modes by the user choice.
@@ -420,23 +485,32 @@ public class MyGameGUI extends Thread {
         if (isAutoMode)
         {
             while (gameClient.game.isRunning()) {
-                try {
-                    sleep(83);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                //this.gameClient.game.move();
+                gameClient.initFruits();
+                gameClient.initRobots();
                 this.gameClient.moveRobots();
                 drawGraph((DGraph) gameClient.g);
                 drawFruits();
                 drawRobots();
                 StdDraw.show();
+
+                try {
+                    sleep(delayT());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
             System.out.println("Game over " + this.gameClient.game.toString());
+            log.KML_END();
+            String remark = log.toString();
+            gameClient.game.sendKML(remark);
+
         }
+
         else {
             while (this.game.isRunning()) {
                 try {
-                    sleep(50);
+                    sleep(delayT());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -448,7 +522,9 @@ public class MyGameGUI extends Thread {
                 StdDraw.show();
             }
             System.out.println("Game over " + this.game.toString());
-
+            log.KML_END();
+            String remark = log.toString();
+            game.sendKML(remark);
         }
         try {
             String gameInfo = gameClient.game.toString();
@@ -460,7 +536,8 @@ public class MyGameGUI extends Thread {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        log.KML_END();
+
+
     }
 
     public static void main(String[] args) {

@@ -7,7 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="GameServer_v0.27 (2)" level="project" />
     <orderEntry type="library" name="java-json" level="project" />
     <orderEntry type="module-library" scope="TEST">
       <library name="JUnit4">
@@ -62,5 +61,10 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="GameServer_v0.32" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.47" level="project" />
+    <orderEntry type="library" name="GameServer_v0.32" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.47" level="project" />
+    <orderEntry type="library" name="GameServer_v0.33" level="project" />
   </component>
 </module>

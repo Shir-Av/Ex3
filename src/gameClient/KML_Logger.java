@@ -28,7 +28,7 @@ class KML_Logger {
                         " <Style id=\"node\">\r\n" +
                         "      <IconStyle>\r\n" +
                         "        <Icon>\r\n" +
-                        "          <href>http://maps.google.com/mapfiles/kml/pal3/icon35.png</href>\r\n" +
+                        "          <href>http://maps.google.com/mapfiles/kml/shapes/motorcycling.png</href>\r\n" +
                         "        </Icon>\r\n" +
                         "        <hotSpot x=\"32\" y=\"1\" xunits=\"pixels\" yunits=\"pixels\"/>\r\n" +
                         "      </IconStyle>\r\n" +
@@ -36,7 +36,7 @@ class KML_Logger {
                         " <Style id=\"fruit_-1\">\r\n" +
                         "      <IconStyle>\r\n" +
                         "        <Icon>\r\n" +
-                        "          <href>https://ya-webdesign.com/images250_/google-map-icon-png-5.png</href>\r\n" +
+                        "          <href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>\r\n" +
                         "        </Icon>\r\n" +
                         "        <hotSpot x=\"32\" y=\"1\" xunits=\"pixels\" yunits=\"pixels\"/>\r\n" +
                         "      </IconStyle>\r\n" +
@@ -44,7 +44,7 @@ class KML_Logger {
                         " <Style id=\"fruit_1\">\r\n" +
                         "      <IconStyle>\r\n" +
                         "        <Icon>\r\n" +
-                        "          <href>https://static.wixstatic.com/media/20c715_d3b8c7feee414b479ebfcfa9e6ee5bf7~mv2.png</href>\r\n" +
+                        "          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle-lv.png</href>\r\n" +
                         "        </Icon>\r\n" +
                         "        <hotSpot x=\"32\" y=\"1\" xunits=\"pixels\" yunits=\"pixels\"/>\r\n" +
                         "      </IconStyle>\r\n" +
@@ -52,7 +52,7 @@ class KML_Logger {
                         " <Style id=\"robot\">\r\n" +
                         "      <IconStyle>\r\n" +
                         "        <Icon>\r\n" +
-                        "          <href>https://toppng.com/public/uploads/thumbnail/in-location-map-icon-navigation-symbol-ma-google-maps-marker-blue-11562916561ezoahrqazu.png</href>\r\n" +
+                        "          <href>http://maps.google.com/mapfiles/kml/shapes/motorcycling.png</href>\r\n" +
                         "        </Icon>\r\n" +
                         "        <hotSpot x=\"32\" y=\"1\" xunits=\"pixels\" yunits=\"pixels\"/>\r\n" +
                         "      </IconStyle>\r\n" +

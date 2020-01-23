@@ -11,7 +11,7 @@ public class Fruit {
     private double value;
     private int type;
     private String img;
-
+    private int tag ;
 
     public Fruit(String s) {
         try {
@@ -26,13 +26,20 @@ public class Fruit {
             } else {
                 this.img = "banana.png";
             }
+            this.tag = 0;
         }
         catch(Exception ex)
         {
             ex.printStackTrace();
         }
     }
-
+    public Fruit (){
+        this.value = 0;
+        this.type = 0;
+        this.location = null;
+        this.img = null;
+        this.tag = 0;
+    }
 
 
     public Point3D getLocation()
@@ -77,6 +84,16 @@ public class Fruit {
 
     public String toString() {
         return this.toJSON();
+    }
+
+    public int getTag()
+    {
+        return tag;
+    }
+
+    public void setTag(int tag)
+    {
+        this.tag = tag;
     }
 
     public String toJSON() {

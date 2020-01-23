@@ -22,8 +22,12 @@ public class GameClient extends Thread{
     public ArrayList<Fruit> fruits;
     public ArrayList<Robot> robots;
     graph g = new DGraph();
+    private static int gameLevel;
+    public ArrayList<edge_data> ef = new ArrayList<>();
     private Graph_Algo gAlgo = new Graph_Algo();
-    public static final double EPS1 = 0.000001, EPS2 = EPS1+EPS1, EPS=EPS2;
+    public static final double EPS1 = 0.0000009, EPS2 = EPS1+EPS1, EPS=EPS2;
+    public String gPic = "";
+    static int d = 0;
     MyGameGUI myGui;
 
     /**
@@ -31,16 +35,16 @@ public class GameClient extends Thread{
      */
     public GameClient (int level)
     {
+        gameLevel = level;
         initGraph(level);
     }
 
     /**
-     * this function gets level and create a new game for this level,
+     * this function create a new game for this level,
      * this function starts a new automatic game.
-     * @param level
      */
-    public void startAutomaticGame (int level){
-        set_automatic_game(level);
+    public void startAutomaticGame (){
+        set_automatic_game();
         game.startGame();
         myGui.t.start();
         String results = game.toString();
@@ -50,20 +54,25 @@ public class GameClient extends Thread{
     /**
      * this function set and update the fruits and the robots lists.
      * this function also gives the robots their first position (closest to the fruits).
-     * @param level
      */
-    public void set_automatic_game(int level)
+    public void set_automatic_game()
     {
         int robotNum = 0;
         try {
             JSONObject info = new JSONObject(game.toString());
             JSONObject jRob = info.getJSONObject("GameServer");
             robotNum = jRob.getInt("robots");
+            String g = jRob.getString("graph");
+            this.gPic = g;
         } catch (JSONException e) {
             e.printStackTrace();
         }
         while (robotNum > 0)
         {
+            if (gameLevel == 16){
+                game.addRobot(25);
+                robotNum--;
+            }
             for(Fruit f: this.fruits)
             {
                 edge_data e = edgeWithFruit(f);
@@ -128,7 +137,7 @@ public class GameClient extends Thread{
      * @param f
      * @return
      */
-    private edge_data edgeWithFruit(Fruit f)
+    public edge_data edgeWithFruit(Fruit f)
     {
         ArrayList<edge_data> edges = new ArrayList<edge_data>();
         try {
@@ -163,25 +172,49 @@ public class GameClient extends Thread{
      */
     public edge_data nextEdge(int robSrc)
     {
+        Fruit fruit = new Fruit();
         int ansSrc = robSrc;
         int ansDest = robSrc;
-
+        int ansSrc2 = robSrc;
+        int ansDest2 =robSrc;
         double minPath = Double.MAX_VALUE;
         initFruits();
         for (Fruit f : this.fruits)
         {
+            if (f.getTag() == 1){
+                continue;
+            }
+
             edge_data edgeOfFruit = edgeWithFruit(f);
             double shortest = this.gAlgo.shortestPathDist(robSrc,edgeOfFruit.getSrc());
             if (shortest < minPath)
             {
                 minPath = shortest;
+                ansSrc2 = ansSrc;
+                ansDest2 = ansDest;
                 ansSrc = edgeOfFruit.getSrc() ;
                 ansDest = edgeOfFruit.getDest();
+                fruit = f;
             }
-        }
-        return this.g.getEdge(ansSrc,ansDest);
-    }
+            else if(ansSrc2 == ansDest2){
+                ansSrc2 = edgeOfFruit.getSrc() ;
+                ansDest2 = edgeOfFruit.getDest();
+            }
 
+        }
+        fruit.setTag(1);
+        edge_data e = g.getEdge(ansSrc,ansDest);
+        if (ef.contains(e)){
+            e = g.getEdge(ansSrc2,ansDest2);
+            System.out.println("chose second edge:  "+ e);
+        }
+        if (!ef.contains(e)) {
+            ef.add(e);
+           // System.out.println(ef);
+        }
+
+        return e;
+    }
     /**
      * this function gets src and dest and returns list of nodes of the shortest path between these two.
      * @param src
@@ -199,6 +232,7 @@ public class GameClient extends Thread{
     public void moveRobots ()
     {
         List<String> moveList = this.game.move();
+        boolean b = false;
         if (moveList != null) {
             long time = this.game.timeToEnd();
             for (int i = 0; i < moveList.size(); i++) {
@@ -210,12 +244,15 @@ public class GameClient extends Thread{
                     int srcR = ttt.getInt("src");
                     int dest = ttt.getInt("dest");
 
+
                     if(dest == -1)
                     {
-                        dest = nextEdge(srcR).getSrc();
+                        edge_data e = nextEdge(srcR);
+                        dest = e.getSrc();
+
 
                         if (dest == srcR) {
-                            game.chooseNextEdge(rId, nextEdge(srcR).getDest());
+                            game.chooseNextEdge(rId, e.getDest());
                         }
                         else //if the list isn't empty than run on the node list to the end and than set the dest to be the next node on ths list
                         {
@@ -225,19 +262,34 @@ public class GameClient extends Thread{
                                 dest = n.getKey();
                                 game.chooseNextEdge(rId, dest);
                             }
-                            dest = nextEdge(srcR).getDest();
+                            dest = e.getDest();
                             game.chooseNextEdge(rId, dest);
                         }
                     }
-//                    System.out.println("Turn to node: "+dest+"  time to end:"+(time/1000));
-//                    System.out.println(ttt);
+                    if (i == 0)
+                    {
+                        b = true;
+                        d = dest;
+                    }
+                    if (b && i == 1 && d == dest)
+                    {
+                        // System.out.println("want to go to  "+ dest+ "  inter number : "+i+ "  robot number :  "+ rId);
+                        //  System.out.println("iter 1 on -1 !!!!!!!!");
+                        game.chooseNextEdge(rId, 24);
+
+                    }
+
+                    System.out.println("Turn to node: "+dest+"  time to end:"+(time/1000));
+                    System.out.println(ttt);
                 } catch (JSONException e) {
+                    System.out.println("fail here");
                     e.printStackTrace();
                 }
-
             }
+            ef.clear();
         }
     }
+
 
     /**
      * these three boolean functions check and return true if a given fruits is on a given edge.
@@ -269,5 +321,4 @@ public class GameClient extends Thread{
         if (type > 0 && dest < src) return false;
         return isOnEdge(p, src, dest, g);
     }
-
 }
