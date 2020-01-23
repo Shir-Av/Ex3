@@ -62,7 +62,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-5.1.47" level="project" />
-    <orderEntry type="library" name="GameServer_v0.32" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.47" level="project" />
     <orderEntry type="library" name="GameServer_v0.33" level="project" />
   </component>

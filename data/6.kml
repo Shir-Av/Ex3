@@ -5,34 +5,34 @@
  <Style id="node">
       <IconStyle>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/pal3/icon35.png</href>
+          <href>http://maps.google.com/mapfiles/kml/shapes/motorcycling.png</href>
         </Icon>
         <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
       </IconStyle>
     </Style> <Style id="fruit_-1">
       <IconStyle>
         <Icon>
-          <href>https://ya-webdesign.com/images250_/google-map-icon-png-5.png</href>
+          <href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>
         </Icon>
         <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
       </IconStyle>
     </Style> <Style id="fruit_1">
       <IconStyle>
         <Icon>
-          <href>https://static.wixstatic.com/media/20c715_d3b8c7feee414b479ebfcfa9e6ee5bf7~mv2.png</href>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle-lv.png</href>
         </Icon>
         <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
       </IconStyle>
     </Style> <Style id="robot">
       <IconStyle>
         <Icon>
-          <href>https://toppng.com/public/uploads/thumbnail/in-location-map-icon-navigation-symbol-ma-google-maps-marker-blue-11562916561ezoahrqazu.png</href>
+          <href>http://maps.google.com/mapfiles/kml/shapes/motorcycling.png</href>
         </Icon>
         <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
       </IconStyle>
     </Style>    <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.260</when>
+        <when>2020-01-23T23:11:53.591</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -41,16 +41,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.336</when>
+        <when>2020-01-23T23:11:53.644</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.18869800968523,32.104927164705884,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.676</when>
+        <when>2020-01-23T23:11:53.929</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -59,16 +59,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.676</when>
+        <when>2020-01-23T23:11:53.929</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18898135372025,32.105477412057894,0.0</coordinates>
+        <coordinates>35.18896685704869,32.1054492598678,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.778</when>
+        <when>2020-01-23T23:11:54.065</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -77,16 +77,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.778</when>
+        <when>2020-01-23T23:11:54.066</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189057131776124,32.105624571233434,0.0</coordinates>
+        <coordinates>35.18905449601766,32.105619452653414,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.886</when>
+        <when>2020-01-23T23:11:54.197</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -95,16 +95,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.887</when>
+        <when>2020-01-23T23:11:54.197</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189121048918906,32.10574869679889,0.0</coordinates>
+        <coordinates>35.189145429684714,32.105796043664064,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:53.999</when>
+        <when>2020-01-23T23:11:54.326</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -113,16 +113,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54</when>
+        <when>2020-01-23T23:11:54.326</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18919550909555,32.10589329668442,0.0</coordinates>
+        <coordinates>35.18922911501598,32.10595855857966,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.104</when>
+        <when>2020-01-23T23:11:54.459</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -131,16 +131,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.104</when>
+        <when>2020-01-23T23:11:54.459</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18927260503066,32.106043015149965,0.0</coordinates>
+        <coordinates>35.189316095045335,32.10612747172027,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.199</when>
+        <when>2020-01-23T23:11:54.594</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -149,16 +149,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.199</when>
+        <when>2020-01-23T23:11:54.595</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18933652217344,32.10616714071542,0.0</coordinates>
+        <coordinates>35.189404392953925,32.1062989441509,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.293</when>
+        <when>2020-01-23T23:11:54.728</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -167,16 +167,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.293</when>
+        <when>2020-01-23T23:11:54.728</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18939846249737,32.10628742734586,0.0</coordinates>
+        <coordinates>35.18949400874174,32.10647297587154,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.387</when>
+        <when>2020-01-23T23:11:54.862</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -185,52 +185,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.387</when>
+        <when>2020-01-23T23:11:54.862</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18946106176092,32.1064089936213,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:54.491</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:54.492</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18952234314524,32.10652800060674,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:54.603</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:54.604</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.189568308313156,32.106617263865544,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.705</when>
+        <when>2020-01-23T23:11:54.986</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -239,16 +203,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.705</when>
+        <when>2020-01-23T23:11:54.986</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18956425733096,32.106698188717864,0.0</coordinates>
+        <coordinates>35.18956369857479,32.10670935076646,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.811</when>
+        <when>2020-01-23T23:11:55.109</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -257,16 +221,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.811</when>
+        <when>2020-01-23T23:11:55.110</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18956097463848,32.106763765753364,0.0</coordinates>
+        <coordinates>35.18955961267033,32.10679097324682,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.912</when>
+        <when>2020-01-23T23:11:55.240</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -275,16 +239,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:54.912</when>
+        <when>2020-01-23T23:11:55.240</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18955702842306,32.106842597721574,0.0</coordinates>
+        <coordinates>35.18955503785422,32.1068823625197,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.021</when>
+        <when>2020-01-23T23:11:55.365</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -293,16 +257,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.021</when>
+        <when>2020-01-23T23:11:55.365</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18955360604154,32.10691096526922,0.0</coordinates>
+        <coordinates>35.189550497960376,32.106973054164534,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.133</when>
+        <when>2020-01-23T23:11:55.488</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -311,16 +275,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.133</when>
+        <when>2020-01-23T23:11:55.488</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189549694748386,32.10698909960939,0.0</coordinates>
+        <coordinates>35.18954634221139,32.10705607190097,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.244</when>
+        <when>2020-01-23T23:11:55.617</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -329,16 +293,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.245</when>
+        <when>2020-01-23T23:11:55.617</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189545748532964,32.1070679315776,0.0</coordinates>
+        <coordinates>35.18954187216207,32.107145368289736,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.351</when>
+        <when>2020-01-23T23:11:55.745</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -347,16 +311,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.352</when>
+        <when>2020-01-23T23:11:55.746</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18954208169563,32.10714118252151,0.0</coordinates>
+        <coordinates>35.18953736719048,32.10723536230654,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.460</when>
+        <when>2020-01-23T23:11:55.876</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -365,16 +329,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.461</when>
+        <when>2020-01-23T23:11:55.876</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189538135480205,32.10722001448972,0.0</coordinates>
+        <coordinates>35.18953286221889,32.107325356323344,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.569</when>
+        <when>2020-01-23T23:11:56.005</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -383,16 +347,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.569</when>
+        <when>2020-01-23T23:11:56.005</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18953446864287,32.10729326543363,0.0</coordinates>
+        <coordinates>35.189528322325046,32.10741604796819,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.678</when>
+        <when>2020-01-23T23:11:56.134</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -401,16 +365,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.678</when>
+        <when>2020-01-23T23:11:56.134</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18953062719423,32.107370004517726,0.0</coordinates>
+        <coordinates>35.18952381735346,32.10750604198499,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.790</when>
+        <when>2020-01-23T23:11:56.265</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -419,16 +383,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.790</when>
+        <when>2020-01-23T23:11:56.265</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18952671590107,32.1074481388579,0.0</coordinates>
+        <coordinates>35.18951927745962,32.107596733629826,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.902</when>
+        <when>2020-01-23T23:11:56.391</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -437,16 +401,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:55.903</when>
+        <when>2020-01-23T23:11:56.391</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18952280460791,32.10752627319807,0.0</coordinates>
+        <coordinates>35.18951480741029,32.1076860300186,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.010</when>
+        <when>2020-01-23T23:11:56.530</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -455,16 +419,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.011</when>
+        <when>2020-01-23T23:11:56.531</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18951899808153,32.10760231465412,0.0</coordinates>
+        <coordinates>35.189509778604794,32.10778648845596,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.123</when>
+        <when>2020-01-23T23:11:56.657</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -473,16 +437,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.123</when>
+        <when>2020-01-23T23:11:56.658</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18951512171063,32.10767975136626,0.0</coordinates>
+        <coordinates>35.18950548316677,32.107872296704535,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.236</when>
+        <when>2020-01-23T23:11:56.787</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -491,52 +455,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.238</when>
+        <when>2020-01-23T23:11:56.788</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18951114057295,32.107759280962505,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:56.349</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:56.349</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18950719435753,32.107838112930715,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:56.462</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:56.463</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.18950462792575,32.10788938151261,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.569</when>
+        <when>2020-01-23T23:11:56.911</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -545,16 +473,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.569</when>
+        <when>2020-01-23T23:11:56.911</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18992586106049,32.107710018301425,0.0</coordinates>
+        <coordinates>35.18999355924286,32.107681192071055,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.676</when>
+        <when>2020-01-23T23:11:57.027</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -563,16 +491,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.677</when>
+        <when>2020-01-23T23:11:57.027</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19030948409391,32.107546669662675,0.0</coordinates>
+        <coordinates>35.190429836418126,32.107495423030905,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.789</when>
+        <when>2020-01-23T23:11:57.144</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -581,16 +509,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.789</when>
+        <when>2020-01-23T23:11:57.145</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.190723195208385,32.10737050936598,0.0</coordinates>
+        <coordinates>35.19086987460352,32.10730805253351,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.891</when>
+        <when>2020-01-23T23:11:57.262</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -599,16 +527,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:56.891</when>
+        <when>2020-01-23T23:11:57.262</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19115947238365,32.10718474032583,0.0</coordinates>
+        <coordinates>35.19131367379905,32.107119080578876,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.002</when>
+        <when>2020-01-23T23:11:57.383</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -617,16 +545,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.003</when>
+        <when>2020-01-23T23:11:57.383</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19153933440695,32.10702299314432,0.0</coordinates>
+        <coordinates>35.19174995097431,32.106933311538725,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.113</when>
+        <when>2020-01-23T23:11:57.510</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -635,16 +563,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.114</when>
+        <when>2020-01-23T23:11:57.510</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19195680653155,32.10684523139038,0.0</coordinates>
+        <coordinates>35.1922238382509,32.10673152792615,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.227</when>
+        <when>2020-01-23T23:11:57.635</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -653,16 +581,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.227</when>
+        <when>2020-01-23T23:11:57.636</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19238180067642,32.10666426672196,0.0</coordinates>
+        <coordinates>35.19270900855787,32.10652493994184,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.343</when>
+        <when>2020-01-23T23:11:57.754</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -671,16 +599,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.343</when>
+        <when>2020-01-23T23:11:57.754</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.192814316841556,32.10648009913905,0.0</coordinates>
+        <coordinates>35.193164090783796,32.10633116361548,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.450</when>
+        <when>2020-01-23T23:11:57.878</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -689,34 +617,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.450</when>
+        <when>2020-01-23T23:11:57.879</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.193216744925635,32.10630874321408,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:57.552</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:57.552</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.19351649233253,32.1061811092437,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.652</when>
+        <when>2020-01-23T23:11:58.006</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -725,16 +635,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.652</when>
+        <when>2020-01-23T23:11:58.006</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19380111992375,32.106102545401534,0.0</coordinates>
+        <coordinates>35.19387720848774,32.1060815431863,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.756</when>
+        <when>2020-01-23T23:11:58.134</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -743,16 +653,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.756</when>
+        <when>2020-01-23T23:11:58.134</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.194063202755274,32.10603020443796,0.0</coordinates>
+        <coordinates>35.194237924642955,32.1059819771289,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.855</when>
+        <when>2020-01-23T23:11:58.263</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -761,16 +671,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.855</when>
+        <when>2020-01-23T23:11:58.264</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19437319320116,32.10594463985738,0.0</coordinates>
+        <coordinates>35.19460145889313,32.10588163321168,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.959</when>
+        <when>2020-01-23T23:11:58.392</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -779,16 +689,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:57.959</when>
+        <when>2020-01-23T23:11:58.392</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19463809412765,32.105871521033976,0.0</coordinates>
+        <coordinates>35.19496499314331,32.105781289294455,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.073</when>
+        <when>2020-01-23T23:11:58.518</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -797,16 +707,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.073</when>
+        <when>2020-01-23T23:11:58.518</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19495372076346,32.105784400733754,0.0</coordinates>
+        <coordinates>35.19532289120356,32.10568250109688,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.188</when>
+        <when>2020-01-23T23:11:58.644</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -815,16 +725,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.189</when>
+        <when>2020-01-23T23:11:58.645</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.195277801684156,32.10569494685406,0.0</coordinates>
+        <coordinates>35.19567797116885,32.10558449075913,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.296</when>
+        <when>2020-01-23T23:11:58.772</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -833,16 +743,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.296</when>
+        <when>2020-01-23T23:11:58.772</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19560470069982,32.10560471511454,0.0</coordinates>
+        <coordinates>35.196038687324055,32.10548492470173,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.402</when>
+        <when>2020-01-23T23:11:58.890</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -851,16 +761,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.403</when>
+        <when>2020-01-23T23:11:58.890</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.195886510196075,32.105526929132196,0.0</coordinates>
+        <coordinates>35.196385313004455,32.10538924794345,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.515</when>
+        <when>2020-01-23T23:11:59.012</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -869,16 +779,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.516</when>
+        <when>2020-01-23T23:11:59.012</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.196210591116774,32.1054374752525,0.0</coordinates>
+        <coordinates>35.19671503011509,32.105298238344105,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.625</when>
+        <when>2020-01-23T23:11:59.139</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -887,16 +797,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.625</when>
+        <when>2020-01-23T23:11:59.139</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19651212727778,32.105354244251394,0.0</coordinates>
+        <coordinates>35.19707292817533,32.10519945014653,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.737</when>
+        <when>2020-01-23T23:11:59.266</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -905,52 +815,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:58.738</when>
+        <when>2020-01-23T23:11:59.267</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19682775391359,32.10526712395117,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:58.853</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:58.853</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19715465292925,32.10517689221165,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:58.965</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:10:58.965</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.197400995964486,32.10510889579832,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.070</when>
+        <when>2020-01-23T23:11:59.395</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -959,16 +833,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.070</when>
+        <when>2020-01-23T23:11:59.396</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.197443436116544,32.10511827249828,0.0</coordinates>
+        <coordinates>35.19745467027444,32.10512075456592,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.180</when>
+        <when>2020-01-23T23:11:59.523</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -977,16 +851,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.180</when>
+        <when>2020-01-23T23:11:59.523</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.197490869227664,32.10512875233941,0.0</coordinates>
+        <coordinates>35.19750751242455,32.105132429476654,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.288</when>
+        <when>2020-01-23T23:11:59.649</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -995,16 +869,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.288</when>
+        <when>2020-01-23T23:11:59.649</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19753414153956,32.10513831289624,0.0</coordinates>
+        <coordinates>35.19756035457466,32.10514410438739,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.398</when>
+        <when>2020-01-23T23:11:59.777</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1013,16 +887,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.399</when>
+        <when>2020-01-23T23:11:59.777</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.197579910331,32.10514842502364,0.0</coordinates>
+        <coordinates>35.197613612804695,32.10515587122656,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.513</when>
+        <when>2020-01-23T23:11:59.901</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1031,16 +905,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.513</when>
+        <when>2020-01-23T23:11:59.901</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19762775952204,32.105158996793214,0.0</coordinates>
+        <coordinates>35.19766687103473,32.10516763806572,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.628</when>
+        <when>2020-01-23T23:12:00.019</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1049,16 +923,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.629</when>
+        <when>2020-01-23T23:12:00.019</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19767560871309,32.10516956856278,0.0</coordinates>
+        <coordinates>35.19771638454546,32.10517857754901,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.744</when>
+        <when>2020-01-23T23:12:00.135</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1067,16 +941,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.744</when>
+        <when>2020-01-23T23:12:00.135</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19772387398405,32.10518023226077,0.0</coordinates>
+        <coordinates>35.19776464981642,32.10518924124701,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.850</when>
+        <when>2020-01-23T23:12:00.257</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1085,16 +959,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.851</when>
+        <when>2020-01-23T23:12:00.257</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1977717231751,32.105190804030336,0.0</coordinates>
+        <coordinates>35.19781374724723,32.105200088801865,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.945</when>
+        <when>2020-01-23T23:12:00.383</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1103,16 +977,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:10:59.945</when>
+        <when>2020-01-23T23:12:00.384</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19781249900747,32.105199813016576,0.0</coordinates>
+        <coordinates>35.19786534115758,32.10521148792731,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.043</when>
+        <when>2020-01-23T23:12:00.511</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1121,16 +995,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.043</when>
+        <when>2020-01-23T23:12:00.511</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.197851194440226,32.105208362360656,0.0</coordinates>
+        <coordinates>35.19791859938761,32.10522325476648,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.137</when>
+        <when>2020-01-23T23:12:00.641</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1139,16 +1013,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.138</when>
+        <when>2020-01-23T23:12:00.641</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.197892386352514,32.105217463275324,0.0</coordinates>
+        <coordinates>35.197972273697566,32.10523511353408,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.230</when>
+        <when>2020-01-23T23:12:00.770</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1157,16 +1031,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.231</when>
+        <when>2020-01-23T23:12:00.770</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19793066570535,32.10522592069098,0.0</coordinates>
+        <coordinates>35.19802594800752,32.10524697230168,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.338</when>
+        <when>2020-01-23T23:12:00.900</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1175,52 +1049,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.338</when>
+        <when>2020-01-23T23:12:00.901</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197970193297955,32.10523465389192,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:00.450</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:00.450</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.198017210329155,32.10524504180463,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:00.567</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:00.568</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.19805902663438,32.10525428067227,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.683</when>
+        <when>2020-01-23T23:12:01.024</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1229,16 +1067,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.683</when>
+        <when>2020-01-23T23:12:01.024</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19826416285599,32.10529497434572,0.0</coordinates>
+        <coordinates>35.19828870907054,32.10529984367417,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.800</when>
+        <when>2020-01-23T23:12:01.141</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1247,16 +1085,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.801</when>
+        <when>2020-01-23T23:12:01.141</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1984692990776,32.10533566801917,0.0</coordinates>
+        <coordinates>35.19849384529215,32.105340537347615,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.908</when>
+        <when>2020-01-23T23:12:01.264</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1265,16 +1103,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:00.909</when>
+        <when>2020-01-23T23:12:01.265</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1986744352992,32.10537636169262,0.0</coordinates>
+        <coordinates>35.19869898151376,32.10538123102106,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.016</when>
+        <when>2020-01-23T23:12:01.394</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1283,16 +1121,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.016</when>
+        <when>2020-01-23T23:12:01.394</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.198848012102104,32.105410794800925,0.0</coordinates>
+        <coordinates>35.19892515734784,32.105426098404614,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.131</when>
+        <when>2020-01-23T23:12:01.523</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1301,16 +1139,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.131</when>
+        <when>2020-01-23T23:12:01.523</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.199049641721636,32.105450792856026,0.0</coordinates>
+        <coordinates>35.19915308648296,32.105471313597334,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.246</when>
+        <when>2020-01-23T23:12:01.651</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1319,16 +1157,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.247</when>
+        <when>2020-01-23T23:12:01.652</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1992530246422,32.105491138720296,0.0</coordinates>
+        <coordinates>35.199377509015996,32.10551583317171,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.354</when>
+        <when>2020-01-23T23:12:01.781</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1337,16 +1175,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.354</when>
+        <when>2020-01-23T23:12:01.781</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19945816086381,32.105531832393744,0.0</coordinates>
+        <coordinates>35.19960543815112,32.10556104836443,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.463</when>
+        <when>2020-01-23T23:12:01.910</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1355,16 +1193,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.464</when>
+        <when>2020-01-23T23:12:01.910</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19962998436567,32.10556591769288,0.0</coordinates>
+        <coordinates>35.19982986068416,32.1056055679388,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.574</when>
+        <when>2020-01-23T23:12:02.037</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1373,16 +1211,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.574</when>
+        <when>2020-01-23T23:12:02.037</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1998316139852,32.10560591574797,0.0</coordinates>
+        <coordinates>35.2000542832172,32.105650087513176,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.675</when>
+        <when>2020-01-23T23:12:02.168</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1391,16 +1229,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.675</when>
+        <when>2020-01-23T23:12:02.168</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.200013957293294,32.105642087902154,0.0</coordinates>
+        <coordinates>35.20027870575024,32.10569460708754,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.785</when>
+        <when>2020-01-23T23:12:02.292</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1409,16 +1247,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.786</when>
+        <when>2020-01-23T23:12:02.292</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20020156050451,32.10567930348385,0.0</coordinates>
+        <coordinates>35.20051014148744,32.10574051789862,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.896</when>
+        <when>2020-01-23T23:12:02.416</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1427,16 +1265,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:01.896</when>
+        <when>2020-01-23T23:12:02.417</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20039617691988,32.10571791030225,0.0</coordinates>
+        <coordinates>35.20072053761216,32.10578225499959,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.005</when>
+        <when>2020-01-23T23:12:02.543</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1445,16 +1283,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.006</when>
+        <when>2020-01-23T23:12:02.544</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.200587286733175,32.105755821502306,0.0</coordinates>
+        <coordinates>35.200943206844165,32.105826426764786,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.118</when>
+        <when>2020-01-23T23:12:02.671</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1463,16 +1301,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.118</when>
+        <when>2020-01-23T23:12:02.671</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20078365644959,32.10579477612988,0.0</coordinates>
+        <coordinates>35.20116587607617,32.10587059852998,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.229</when>
+        <when>2020-01-23T23:12:02.799</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1481,16 +1319,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.230</when>
+        <when>2020-01-23T23:12:02.799</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20098002616599,32.10583373075746,0.0</coordinates>
+        <coordinates>35.20139029860921,32.105915118104356,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.338</when>
+        <when>2020-01-23T23:12:02.928</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1499,52 +1337,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.339</when>
+        <when>2020-01-23T23:12:02.928</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20117113597929,32.10587164195751,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:02.451</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:02.451</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.2013675056957,32.10591059658508,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:02.565</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:02.566</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20154022114608,32.10594485882353,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.680</when>
+        <when>2020-01-23T23:12:03.055</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1553,16 +1355,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.680</when>
+        <when>2020-01-23T23:12:03.055</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.201915923068825,32.105978802152336,0.0</coordinates>
+        <coordinates>35.201965357532345,32.10598326837981,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.789</when>
+        <when>2020-01-23T23:12:03.184</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1571,16 +1373,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.789</when>
+        <when>2020-01-23T23:12:03.184</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20227514683706,32.106011256738654,0.0</coordinates>
+        <coordinates>35.2023839026568,32.10602108243909,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.899</when>
+        <when>2020-01-23T23:12:03.312</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1589,16 +1391,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:02.899</when>
+        <when>2020-01-23T23:12:03.312</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2026508487598,32.106045200067456,0.0</coordinates>
+        <coordinates>35.20280903904306,32.10605949199538,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.006</when>
+        <when>2020-01-23T23:12:03.437</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1607,16 +1409,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.007</when>
+        <when>2020-01-23T23:12:03.437</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.202996890004435,32.10607646365978,0.0</coordinates>
+        <coordinates>35.20323087979842,32.106097603803164,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.115</when>
+        <when>2020-01-23T23:12:03.560</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1625,16 +1427,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.116</when>
+        <when>2020-01-23T23:12:03.560</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20335611377267,32.1061089182461,0.0</coordinates>
+        <coordinates>35.20362635550657,32.10613333362296,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.228</when>
+        <when>2020-01-23T23:12:03.687</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1643,16 +1445,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.228</when>
+        <when>2020-01-23T23:12:03.687</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.203725224433605,32.10614226607791,0.0</coordinates>
+        <coordinates>35.204044900631025,32.10617114768225,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.341</when>
+        <when>2020-01-23T23:12:03.813</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1661,16 +1463,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.342</when>
+        <when>2020-01-23T23:12:03.813</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20409763072545,32.10617591165822,0.0</coordinates>
+        <coordinates>35.204463445755486,32.10620896174153,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.450</when>
+        <when>2020-01-23T23:12:03.940</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1679,16 +1481,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.451</when>
+        <when>2020-01-23T23:12:03.940</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.204456854493685,32.10620836624454,0.0</coordinates>
+        <coordinates>35.20488199087995,32.10624677580082,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.558</when>
+        <when>2020-01-23T23:12:04.067</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1697,16 +1499,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.559</when>
+        <when>2020-01-23T23:12:04.068</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20482926078552,32.10624201182485,0.0</coordinates>
+        <coordinates>35.2053005360044,32.1062845898601,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.669</when>
+        <when>2020-01-23T23:12:04.194</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1715,16 +1517,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.669</when>
+        <when>2020-01-23T23:12:04.194</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20518189329196,32.106273870914166,0.0</coordinates>
+        <coordinates>35.20571908112886,32.10632240391939,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.777</when>
+        <when>2020-01-23T23:12:04.321</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1733,34 +1535,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.778</when>
+        <when>2020-01-23T23:12:04.321</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20553452579839,32.106305730003484,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:03.880</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.206679711961414,32.10571613186106,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:03.880</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.205764353510894,32.106326494117646,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.974</when>
+        <when>2020-01-23T23:12:04.390</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1769,16 +1553,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:03.975</when>
+        <when>2020-01-23T23:12:04.390</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20589440830872,32.106239773402024,0.0</coordinates>
+        <coordinates>35.205862244218935,32.10626122046072,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.075</when>
+        <when>2020-01-23T23:12:04.513</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1787,16 +1571,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.075</when>
+        <when>2020-01-23T23:12:04.513</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.206031455299986,32.10614839028233,0.0</coordinates>
+        <coordinates>35.206039845932104,32.10614279539745,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.185</when>
+        <when>2020-01-23T23:12:04.634</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1805,16 +1589,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.185</when>
+        <when>2020-01-23T23:12:04.634</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20617409604599,32.10605327723938,0.0</coordinates>
+        <coordinates>35.20620486169709,32.10603276266149,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.298</when>
+        <when>2020-01-23T23:12:04.760</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1823,16 +1607,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.299</when>
+        <when>2020-01-23T23:12:04.760</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20633491649492,32.10594604194587,0.0</coordinates>
+        <coordinates>35.206379666532875,32.10591620255985,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.407</when>
+        <when>2020-01-23T23:12:04.887</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1841,16 +1625,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.408</when>
+        <when>2020-01-23T23:12:04.887</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.206487346311725,32.10584440153723,0.0</coordinates>
+        <coordinates>35.206557268246044,32.105797777496576,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.522</when>
+        <when>2020-01-23T23:12:05.014</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1859,16 +1643,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.523</when>
+        <when>2020-01-23T23:12:05.015</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20664816676065,32.10573716624372,0.0</coordinates>
+        <coordinates>35.206734869959206,32.1056793524333,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.627</when>
+        <when>2020-01-23T23:12:05.142</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1877,16 +1661,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.627</when>
+        <when>2020-01-23T23:12:05.142</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20680619033221,32.105631795911826,0.0</coordinates>
+        <coordinates>35.20691387011106,32.10555999488921,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.735</when>
+        <when>2020-01-23T23:12:05.270</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1895,16 +1679,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.736</when>
+        <when>2020-01-23T23:12:05.270</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.206944635762156,32.10553948031132,0.0</coordinates>
+        <coordinates>35.20709147182422,32.10544156982594,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.848</when>
+        <when>2020-01-23T23:12:05.397</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1913,16 +1697,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.848</when>
+        <when>2020-01-23T23:12:05.397</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20710685464977,32.105431312537,0.0</coordinates>
+        <coordinates>35.207270471976074,32.105322212281855,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.944</when>
+        <when>2020-01-23T23:12:05.525</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1931,16 +1715,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:04.944</when>
+        <when>2020-01-23T23:12:05.526</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20725369071184,32.10533340205161,0.0</coordinates>
+        <coordinates>35.207448073689235,32.105203787218585,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.047</when>
+        <when>2020-01-23T23:12:05.649</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1949,16 +1733,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.048</when>
+        <when>2020-01-23T23:12:05.649</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.207382347070975,32.1052476138168,0.0</coordinates>
+        <coordinates>35.20762707384108,32.1050844296745,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.158</when>
+        <when>2020-01-23T23:12:05.770</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1967,16 +1751,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.159</when>
+        <when>2020-01-23T23:12:05.770</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20753757376516,32.10514410844654,0.0</coordinates>
+        <coordinates>35.20779348804476,32.10497346445773,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.273</when>
+        <when>2020-01-23T23:12:05.895</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -1985,16 +1769,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.273</when>
+        <when>2020-01-23T23:12:05.895</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2076969957754,32.105037805633835,0.0</coordinates>
+        <coordinates>35.20796689444186,32.10485783683689,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.387</when>
+        <when>2020-01-23T23:12:06.017</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2003,34 +1787,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.388</when>
+        <when>2020-01-23T23:12:06.017</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.207857816224326,32.10493057034032,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:05.504</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.212669424769075,32.105340746955505,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:05.505</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20797194027441,32.104854472268904,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.617</when>
+        <when>2020-01-23T23:12:06.138</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2039,16 +1805,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.618</when>
+        <when>2020-01-23T23:12:06.138</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.208287271788166,32.10495969053766,0.0</coordinates>
+        <coordinates>35.20829280391998,32.1049615364722,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.726</when>
+        <when>2020-01-23T23:12:06.261</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2057,16 +1823,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.726</when>
+        <when>2020-01-23T23:12:06.262</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.208591539038274,32.10506121693734,0.0</coordinates>
+        <coordinates>35.20864409429057,32.10507875331547,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.839</when>
+        <when>2020-01-23T23:12:06.386</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2075,16 +1841,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.839</when>
+        <when>2020-01-23T23:12:06.387</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20890133842021,32.10516458927155,0.0</coordinates>
+        <coordinates>35.2089815543316,32.10519135532238,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.951</when>
+        <when>2020-01-23T23:12:06.513</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2093,16 +1859,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:05.951</when>
+        <when>2020-01-23T23:12:06.513</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20921390386805,32.10526888457304,0.0</coordinates>
+        <coordinates>35.20933007863628,32.10530764919837,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.058</when>
+        <when>2020-01-23T23:12:06.639</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2111,16 +1877,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.059</when>
+        <when>2020-01-23T23:12:06.640</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.209509872920435,32.10536764207091,0.0</coordinates>
+        <coordinates>35.20967860294095,32.10542394307437,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.171</when>
+        <when>2020-01-23T23:12:06.763</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2129,16 +1895,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.171</when>
+        <when>2020-01-23T23:12:06.763</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.209819672302366,32.105471014405126,0.0</coordinates>
+        <coordinates>35.210029893311535,32.105541159917635,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.277</when>
+        <when>2020-01-23T23:12:06.882</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2147,16 +1913,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.277</when>
+        <when>2020-01-23T23:12:06.882</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21013223775021,32.105575309706616,0.0</coordinates>
+        <coordinates>35.210364587286655,32.105652838957276,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.382</when>
+        <when>2020-01-23T23:12:07.004</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2165,16 +1931,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.383</when>
+        <when>2020-01-23T23:12:07.004</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21040884434122,32.10566760643359,0.0</coordinates>
+        <coordinates>35.210688216998136,32.10576082612784,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.495</when>
+        <when>2020-01-23T23:12:07.131</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2183,16 +1949,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.495</when>
+        <when>2020-01-23T23:12:07.131</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21071864372315,32.105770978767815,0.0</coordinates>
+        <coordinates>35.211039507368724,32.105878042971106,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.602</when>
+        <when>2020-01-23T23:12:07.260</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2201,16 +1967,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.603</when>
+        <when>2020-01-23T23:12:07.260</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21101461277553,32.10586973626568,0.0</coordinates>
+        <coordinates>35.21139356380522,32.105996182781645,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.715</when>
+        <when>2020-01-23T23:12:07.387</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2219,16 +1985,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.715</when>
+        <when>2020-01-23T23:12:07.388</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.211321646091555,32.10597218563263,0.0</coordinates>
+        <coordinates>35.21175038630762,32.106115245559444,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.830</when>
+        <when>2020-01-23T23:12:07.510</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2237,16 +2003,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.830</when>
+        <when>2020-01-23T23:12:07.511</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21163974367121,32.106078326868655,0.0</coordinates>
+        <coordinates>35.21209891061229,32.10623153943544,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.944</when>
+        <when>2020-01-23T23:12:07.630</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2255,34 +2021,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:06.944</when>
+        <when>2020-01-23T23:12:07.631</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.21195784125088,32.10618446810468,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:07.043</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.212669424769075,32.105340746955505,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:07.044</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.212111165456015,32.106235628571426,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.149</when>
+        <when>2020-01-23T23:12:07.691</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2291,16 +2039,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.150</when>
+        <when>2020-01-23T23:12:07.691</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212172198184064,32.10613779398986,0.0</coordinates>
+        <coordinates>35.21214891765893,32.10617511233541,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.258</when>
+        <when>2020-01-23T23:12:07.810</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2309,16 +2057,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.259</when>
+        <when>2020-01-23T23:12:07.810</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212241410556075,32.10602684755716,0.0</coordinates>
+        <coordinates>35.21222442206476,32.10605407986337,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.370</when>
+        <when>2020-01-23T23:12:07.930</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2327,16 +2075,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.371</when>
+        <when>2020-01-23T23:12:07.930</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212311252131464,32.10591489252052,0.0</coordinates>
+        <coordinates>35.21229992647059,32.10593304739133,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.483</when>
+        <when>2020-01-23T23:12:08.048</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2345,16 +2093,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.483</when>
+        <when>2020-01-23T23:12:08.048</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21238235211362,32.10580092027602,0.0</coordinates>
+        <coordinates>35.212374801673036,32.105813023523226,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.596</when>
+        <when>2020-01-23T23:12:08.169</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2363,16 +2111,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.597</when>
+        <when>2020-01-23T23:12:08.170</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21245345209578,32.10568694803152,0.0</coordinates>
+        <coordinates>35.212448418468725,32.10569501686299,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.704</when>
+        <when>2020-01-23T23:12:08.293</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2381,16 +2129,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.705</when>
+        <when>2020-01-23T23:12:08.293</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21252329367117,32.10557499299488,0.0</coordinates>
+        <coordinates>35.21252832729823,32.10556692416341,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.815</when>
+        <when>2020-01-23T23:12:08.413</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2399,16 +2147,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.815</when>
+        <when>2020-01-23T23:12:08.413</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2125918768398,32.105465055166114,0.0</coordinates>
+        <coordinates>35.21260383170406,32.105445891691375,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.925</when>
+        <when>2020-01-23T23:12:08.530</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2417,16 +2165,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:07.925</when>
+        <when>2020-01-23T23:12:08.530</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212661089211814,32.10535410873341,0.0</coordinates>
+        <coordinates>35.212678077703124,32.1053268764272,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.033</when>
+        <when>2020-01-23T23:12:08.652</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2435,16 +2183,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.034</when>
+        <when>2020-01-23T23:12:08.653</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21272967238044,32.10524417090464,0.0</coordinates>
+        <coordinates>35.212751694498806,32.10520886976696,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.145</when>
+        <when>2020-01-23T23:12:08.780</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2453,16 +2201,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.146</when>
+        <when>2020-01-23T23:12:08.781</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21279951395584,32.105132215868004,0.0</coordinates>
+        <coordinates>35.212832232531696,32.105079768463455,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.253</when>
+        <when>2020-01-23T23:12:08.910</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2471,16 +2219,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.253</when>
+        <when>2020-01-23T23:12:08.910</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21286998473461,32.105019252227436,0.0</coordinates>
+        <coordinates>35.21291339976796,32.104949658556016,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.351</when>
+        <when>2020-01-23T23:12:09.037</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2489,16 +2237,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.351</when>
+        <when>2020-01-23T23:12:09.037</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21293542188633,32.10491435741834,0.0</coordinates>
+        <coordinates>35.212993937800846,32.10482055725251,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.456</when>
+        <when>2020-01-23T23:12:09.164</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2507,16 +2255,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.457</when>
+        <when>2020-01-23T23:12:09.164</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21299456700423,32.10481954864857,0.0</coordinates>
+        <coordinates>35.21307384663035,32.10469246455293,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.562</when>
+        <when>2020-01-23T23:12:09.287</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2525,34 +2273,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.562</when>
+        <when>2020-01-23T23:12:09.287</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.213066296189766,32.104704567800134,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:08.672</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:08.672</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.21310882485876,32.104636394957986,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.784</when>
+        <when>2020-01-23T23:12:09.352</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2561,16 +2291,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.785</when>
+        <when>2020-01-23T23:12:09.353</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212925890308306,32.10442173029126,0.0</coordinates>
+        <coordinates>35.21299675684587,32.10450488867567,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.887</when>
+        <when>2020-01-23T23:12:09.419</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2579,16 +2309,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.887</when>
+        <when>2020-01-23T23:12:09.419</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21273801158082,32.10420126387679,0.0</coordinates>
+        <coordinates>35.21288963301002,32.104379184141095,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.979</when>
+        <when>2020-01-23T23:12:09.486</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2597,16 +2327,160 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:08.979</when>
+        <when>2020-01-23T23:12:09.486</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.212586390151614,32.104023343612475,0.0</coordinates>
+        <coordinates>35.21277756499713,32.10424767785878,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.072</when>
+        <when>2020-01-23T23:12:09.553</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.554</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.212667145043255,32.104118105492375,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.620</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.620</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21255837314839,32.103990467041896,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.687</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.687</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21244795319451,32.10386089467549,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.753</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.754</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21233753324064,32.10373132230909,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.819</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.820</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21222876134578,32.1036036838586,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.886</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.886</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21211998945091,32.103476045408115,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.949</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:09.950</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21200956949704,32.10334647304172,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.009</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.21120742821597,32.10240519983585,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.010</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.211910685956255,32.10323043808673,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.071</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2615,16 +2489,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.072</when>
+        <when>2020-01-23T23:12:10.071</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2124331206634,32.10384348943224,0.0</coordinates>
+        <coordinates>35.211810154356456,32.10311246921583,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.165</when>
+        <when>2020-01-23T23:12:10.135</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2633,16 +2507,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.165</when>
+        <when>2020-01-23T23:12:10.136</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21227985117518,32.10366363525201,0.0</coordinates>
+        <coordinates>35.211707974697646,32.10299256642901,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.258</when>
+        <when>2020-01-23T23:12:10.202</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2651,16 +2525,52 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.258</when>
+        <when>2020-01-23T23:12:10.202</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21212822974598,32.1034857149877,0.0</coordinates>
+        <coordinates>35.21159920280278,32.10286492797852,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.351</when>
+        <when>2020-01-23T23:12:10.265</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.2107064115802,32.10181728154006,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.265</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.21148713478989,32.1027334216962,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.323</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.2107064115802,32.10181728154006,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.323</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.211391547367136,32.10262125457305,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:10.387</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2669,16 +2579,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.351</when>
+        <when>2020-01-23T23:12:10.387</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21197331219875,32.103303926891556,0.0</coordinates>
+        <coordinates>35.21129266382635,32.10250521961807,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.444</when>
+        <when>2020-01-23T23:12:10.514</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2687,16 +2597,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.444</when>
+        <when>2020-01-23T23:12:10.514</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.211820042710535,32.103124072711324,0.0</coordinates>
+        <coordinates>35.211086656449716,32.10226348012851,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.537</when>
+        <when>2020-01-23T23:12:10.641</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2705,16 +2615,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.538</when>
+        <when>2020-01-23T23:12:10.642</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21166677322232,32.10294421853109,0.0</coordinates>
+        <coordinates>35.21087570489605,32.1020159388912,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.639</when>
+        <when>2020-01-23T23:12:10.770</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2723,16 +2633,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.639</when>
+        <when>2020-01-23T23:12:10.770</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.211515151793115,32.102766298266786,0.0</coordinates>
+        <coordinates>35.21066475334237,32.1017683976539,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.746</when>
+        <when>2020-01-23T23:12:10.900</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2741,16 +2651,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.747</when>
+        <when>2020-01-23T23:12:10.900</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.21134045753773,32.10256130317964,0.0</coordinates>
+        <coordinates>35.21045050567067,32.10151698858476,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.853</when>
+        <when>2020-01-23T23:12:11.029</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2759,106 +2669,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:09.854</when>
+        <when>2020-01-23T23:12:11.030</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.21115093075123,32.10233890284925,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:09.968</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:09.968</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.21097623649584,32.10213390776211,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.077</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.077</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.210794950004406,32.1019211770113,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.189</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.189</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.21060707127691,32.10170071059682,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.302</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.303</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.21042248866745,32.10148411201418,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.409</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:10.409</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.21023790605798,32.10126751343154,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.519</when>
+        <when>2020-01-23T23:12:11.158</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2867,16 +2687,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.519</when>
+        <when>2020-01-23T23:12:11.158</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.21007339305892,32.10107446554622,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.630</when>
+        <when>2020-01-23T23:12:11.288</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2885,16 +2705,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.630</when>
+        <when>2020-01-23T23:12:11.288</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.209875353558,32.10119032439922,0.0</coordinates>
+        <coordinates>35.209845293990895,32.10120791011798,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.737</when>
+        <when>2020-01-23T23:12:11.409</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2903,16 +2723,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.738</when>
+        <when>2020-01-23T23:12:11.409</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2096843868964,32.101302045436036,0.0</coordinates>
+        <coordinates>35.20961719492287,32.10134135468974,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.848</when>
+        <when>2020-01-23T23:12:11.534</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2921,16 +2741,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.849</when>
+        <when>2020-01-23T23:12:11.534</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20948988381514,32.10141583538095,0.0</coordinates>
+        <coordinates>35.20940500974332,32.10146548917509,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.958</when>
+        <when>2020-01-23T23:12:11.660</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2939,16 +2759,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:10.958</when>
+        <when>2020-01-23T23:12:11.661</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20929184431422,32.10153169423395,0.0</coordinates>
+        <coordinates>35.20918575172444,32.10159376147663,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.066</when>
+        <when>2020-01-23T23:12:11.787</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2957,16 +2777,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.067</when>
+        <when>2020-01-23T23:12:11.787</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.209100877652624,32.101643415270765,0.0</coordinates>
+        <coordinates>35.20896118907608,32.10172513714029,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.171</when>
+        <when>2020-01-23T23:12:11.914</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2975,16 +2795,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.171</when>
+        <when>2020-01-23T23:12:11.914</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20890637457136,32.10175720521568,0.0</coordinates>
+        <coordinates>35.208736626427715,32.10185651280396,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.281</when>
+        <when>2020-01-23T23:12:12.042</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -2993,16 +2813,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.281</when>
+        <when>2020-01-23T23:12:12.042</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20872424895891,32.10186375398227,0.0</coordinates>
+        <coordinates>35.208510295569525,32.10198892292168,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.387</when>
+        <when>2020-01-23T23:12:12.168</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3011,16 +2831,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.387</when>
+        <when>2020-01-23T23:12:12.168</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20852797766782,32.10197857838123,0.0</coordinates>
+        <coordinates>35.208285732921155,32.10212029858535,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.492</when>
+        <when>2020-01-23T23:12:12.295</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3029,16 +2849,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.493</when>
+        <when>2020-01-23T23:12:12.295</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20834938847503,32.102083058239735,0.0</coordinates>
+        <coordinates>35.20806293848263,32.10225063979497,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.601</when>
+        <when>2020-01-23T23:12:12.423</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3047,16 +2867,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.602</when>
+        <when>2020-01-23T23:12:12.424</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.208156653603595,32.1021958137306,0.0</coordinates>
+        <coordinates>35.20783660762443,32.10238304991268,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.703</when>
+        <when>2020-01-23T23:12:12.545</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3065,16 +2885,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.704</when>
+        <when>2020-01-23T23:12:12.545</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20796038231251,32.10231063812956,0.0</coordinates>
+        <coordinates>35.20761204497607,32.10251442557635,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.809</when>
+        <when>2020-01-23T23:12:12.667</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3083,52 +2903,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:11.810</when>
+        <when>2020-01-23T23:12:12.667</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.207792402378686,32.102408911263794,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:11.920</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:11.921</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20759259466794,32.10252580457084,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:12.033</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:12.034</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20752617756255,32.1025646605042,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.143</when>
+        <when>2020-01-23T23:12:12.794</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3137,16 +2921,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.143</when>
+        <when>2020-01-23T23:12:12.794</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20755351162381,32.10270507120564,0.0</coordinates>
+        <coordinates>35.20755773597873,32.10272677104132,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.255</when>
+        <when>2020-01-23T23:12:12.921</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3155,16 +2939,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.255</when>
+        <when>2020-01-23T23:12:12.922</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20758159115947,32.102849311289845,0.0</coordinates>
+        <coordinates>35.207589294394914,32.10288888157844,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.360</when>
+        <when>2020-01-23T23:12:13.047</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3173,16 +2957,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.361</when>
+        <when>2020-01-23T23:12:13.047</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20760743427193,32.10298206322575,0.0</coordinates>
+        <coordinates>35.20762085281109,32.103050992115556,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.468</when>
+        <when>2020-01-23T23:12:13.174</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3191,16 +2975,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.468</when>
+        <when>2020-01-23T23:12:13.174</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20763526531612,32.10312502684904,0.0</coordinates>
+        <coordinates>35.207652162735805,32.103211826191746,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.576</when>
+        <when>2020-01-23T23:12:13.303</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3209,16 +2993,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.576</when>
+        <when>2020-01-23T23:12:13.303</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.207660859937114,32.10325650232402,0.0</coordinates>
+        <coordinates>35.207683969643455,32.103375213189786,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.684</when>
+        <when>2020-01-23T23:12:13.430</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3227,16 +3011,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.684</when>
+        <when>2020-01-23T23:12:13.431</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20768794550691,32.10339563656454,0.0</coordinates>
+        <coordinates>35.207715776551105,32.103538600187825,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.797</when>
+        <when>2020-01-23T23:12:13.558</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3245,52 +3029,412 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.798</when>
+        <when>2020-01-23T23:12:13.559</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.207716025042565,32.10353987664875,0.0</coordinates>
+        <coordinates>35.20774758345875,32.10370198718587,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.902</when>
+        <when>2020-01-23T23:12:13.685</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
-        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:12.902</when>
+        <when>2020-01-23T23:12:13.685</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20774435306969,32.10368539319388,0.0</coordinates>
+        <coordinates>35.20777914187493,32.10386409772298,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.006</when>
+        <when>2020-01-23T23:12:13.813</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
-        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.007</when>
+        <when>2020-01-23T23:12:13.813</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20781094878258,32.10402748472102,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:13.939</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:13.939</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.207842258707295,32.10418831879722,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.065</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.066</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20787381712348,32.10435042933434,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.194</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.195</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20790562403112,32.10451381633238,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.322</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.322</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20793743093877,32.10467720333042,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.448</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.449</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20796898935495,32.10483931386754,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.576</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.576</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20797194027441,32.104854472268904,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.120</when>
+        <when>2020-01-23T23:12:14.702</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.703</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20774361200293,32.105006721870076,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.830</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.831</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20751706754607,32.105157782021244,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.957</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:14.958</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20728873927459,32.10531003162242,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.084</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.084</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20706397863235,32.10545990232358,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.210</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.210</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.206839217990115,32.10560977302473,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.338</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.339</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20661088971863,32.10576202262591,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.467</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.468</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20638077763253,32.10591546167709,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.592</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.592</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20615780080491,32.10606414292824,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.717</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.717</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20593304016267,32.1062140136294,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.844</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.844</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.205764353510894,32.106326494117646,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.911</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.911</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20585944734157,32.10626308542235,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.973</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:15.973</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.205950345856174,32.10620247416949,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:16.037</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:16.037</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20603425217735,32.1061465253207,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:16.103</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.20704629752213,32.105471692111855,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:16.103</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20612794756934,32.10608404910622,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:16.169</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3299,16 +3443,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.121</when>
+        <when>2020-01-23T23:12:16.169</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.207917408437595,32.10457435094389,0.0</coordinates>
+        <coordinates>35.20622024452264,32.10602250537255,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.219</when>
+        <when>2020-01-23T23:12:16.296</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3317,16 +3461,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.219</when>
+        <when>2020-01-23T23:12:16.296</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20786480693129,32.104304145418006,0.0</coordinates>
+        <coordinates>35.20702574520596,32.10548539642416,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.324</when>
+        <when>2020-01-23T23:12:16.421</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3335,16 +3479,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.325</when>
+        <when>2020-01-23T23:12:16.421</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20781896158176,32.10406864518901,0.0</coordinates>
+        <coordinates>35.20738094863229,32.10524854629762,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.435</when>
+        <when>2020-01-23T23:12:16.544</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3353,16 +3497,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.436</when>
+        <when>2020-01-23T23:12:16.544</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.2077653949102,32.10379348176356,0.0</coordinates>
+        <coordinates>35.20773335518125,32.105013561132694,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.550</when>
+        <when>2020-01-23T23:12:16.663</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3371,16 +3515,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.550</when>
+        <when>2020-01-23T23:12:16.663</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20770989790813,32.10350840253899,0.0</coordinates>
+        <coordinates>35.20797194027441,32.104854472268904,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.663</when>
+        <when>2020-01-23T23:12:16.780</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3389,16 +3533,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.663</when>
+        <when>2020-01-23T23:12:16.780</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.207655366071315,32.10322828121399,0.0</coordinates>
+        <coordinates>35.20791547810709,32.10456443514478,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.772</when>
+        <when>2020-01-23T23:12:16.902</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3407,16 +3551,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.772</when>
+        <when>2020-01-23T23:12:16.902</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20760276456501,32.10295807568809,0.0</coordinates>
+        <coordinates>35.207859015939775,32.10427439802066,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.883</when>
+        <when>2020-01-23T23:12:17.028</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3425,16 +3569,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.884</when>
+        <when>2020-01-23T23:12:17.028</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20754871531082,32.10268043331286,0.0</coordinates>
+        <coordinates>35.207798210528814,32.10396205034852,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.996</when>
+        <when>2020-01-23T23:12:17.153</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3443,16 +3587,106 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:13.996</when>
+        <when>2020-01-23T23:12:17.153</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.207737405117854,32.103649702676385,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.280</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.280</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20767659970689,32.10333735500426,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.407</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.407</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.207615311713305,32.10302252838234,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.532</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.532</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.207554506302344,32.10271018071021,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.659</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.659</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20752617756255,32.1025646605042,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.091</when>
+        <when>2020-01-23T23:12:17.720</when>
+      </TimeStamp>
+      <styleUrl>#fruit_-1</styleUrl>
+      <Point>
+        <coordinates>35.206149967510925,32.10276103191955,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.720</when>
+      </TimeStamp>
+      <styleUrl>#robot</styleUrl>
+      <Point>
+        <coordinates>35.20716406449136,32.10261633041914,0.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <TimeStamp>
+        <when>2020-01-23T23:12:17.781</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3461,16 +3695,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.091</when>
+        <when>2020-01-23T23:12:17.781</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20696106170902,32.10264529688661,0.0</coordinates>
+        <coordinates>35.206851330475324,32.10266095443659,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.187</when>
+        <when>2020-01-23T23:12:17.848</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3479,16 +3713,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.188</when>
+        <when>2020-01-23T23:12:17.848</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20646178459571,32.10271653873902,0.0</coordinates>
+        <coordinates>35.20648921740413,32.102712624351526,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.297</when>
+        <when>2020-01-23T23:12:17.973</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3497,16 +3731,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.298</when>
+        <when>2020-01-23T23:12:17.974</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.205891182180494,32.10279795799892,0.0</coordinates>
+        <coordinates>35.20579791063185,32.10281126691641,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.410</when>
+        <when>2020-01-23T23:12:18.100</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3515,16 +3749,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.410</when>
+        <when>2020-01-23T23:12:18.100</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.205271200710115,32.10288642315632,0.0</coordinates>
+        <coordinates>35.205106603859576,32.10290990948129,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.517</when>
+        <when>2020-01-23T23:12:18.226</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3533,16 +3767,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.518</when>
+        <when>2020-01-23T23:12:18.226</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20468413860985,32.10297019104872,0.0</coordinates>
+        <coordinates>35.204415297087294,32.10300855204618,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.631</when>
+        <when>2020-01-23T23:12:18.353</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3551,16 +3785,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.631</when>
+        <when>2020-01-23T23:12:18.353</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20405867057779,32.103059439083616,0.0</coordinates>
+        <coordinates>35.203718503753336,32.103107977488555,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.735</when>
+        <when>2020-01-23T23:12:18.479</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3569,34 +3803,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.735</when>
+        <when>2020-01-23T23:12:18.480</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.203433202545725,32.10314868711851,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:14.842</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:14.842</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.20319591121872,32.10318254621849,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.955</when>
+        <when>2020-01-23T23:12:18.607</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3605,16 +3821,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:14.956</when>
+        <when>2020-01-23T23:12:18.607</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.202279028650096,32.102974891663926,0.0</coordinates>
+        <coordinates>35.20219282601544,32.10295536858615,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.060</when>
+        <when>2020-01-23T23:12:18.732</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3623,16 +3839,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.061</when>
+        <when>2020-01-23T23:12:18.732</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20146402192243,32.10279030983765,0.0</coordinates>
+        <coordinates>35.20120541401846,32.10273174060431,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.173</when>
+        <when>2020-01-23T23:12:18.858</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3641,16 +3857,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.173</when>
+        <when>2020-01-23T23:12:18.858</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.20058632236956,32.10259152940935,0.0</coordinates>
+        <coordinates>35.20021800202149,32.10250811262248,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.284</when>
+        <when>2020-01-23T23:12:18.985</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3659,16 +3875,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.284</when>
+        <when>2020-01-23T23:12:18.985</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19970862281669,32.10239274898105,0.0</coordinates>
+        <coordinates>35.199230590024506,32.10228448464064,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.395</when>
+        <when>2020-01-23T23:12:19.111</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3677,16 +3893,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.395</when>
+        <when>2020-01-23T23:12:19.112</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19885443307327,32.10219929302851,0.0</coordinates>
+        <coordinates>35.198243178027525,32.10206085665881,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.506</when>
+        <when>2020-01-23T23:12:19.239</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3695,16 +3911,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.506</when>
+        <when>2020-01-23T23:12:19.239</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19798457012355,32.10200228742547,0.0</coordinates>
+        <coordinates>35.197240092824245,32.10183367902646,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.615</when>
+        <when>2020-01-23T23:12:19.366</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3713,16 +3929,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.615</when>
+        <when>2020-01-23T23:12:19.366</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19709119736439,32.101799957346664,0.0</coordinates>
+        <coordinates>35.19624484422412,32.10160827621937,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.721</when>
+        <when>2020-01-23T23:12:19.494</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3731,34 +3947,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.722</when>
+        <when>2020-01-23T23:12:19.494</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19629186384302,32.10161892517089,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:15.829</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:15.830</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.19589389346247,32.10152879327731,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.937</when>
+        <when>2020-01-23T23:12:19.620</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3767,16 +3965,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:15.937</when>
+        <when>2020-01-23T23:12:19.620</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1955672406545,32.10166862354701,0.0</coordinates>
+        <coordinates>35.19548795599237,32.10170256293286,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.048</when>
+        <when>2020-01-23T23:12:19.745</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3785,16 +3983,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.049</when>
+        <when>2020-01-23T23:12:19.745</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.195215216754654,32.10181931442018,0.0</coordinates>
+        <coordinates>35.19509153268173,32.101872259862105,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.151</when>
+        <when>2020-01-23T23:12:19.873</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3803,16 +4001,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.151</when>
+        <when>2020-01-23T23:12:19.873</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.194850507308864,32.10197543559509,0.0</coordinates>
+        <coordinates>35.19468876659812,32.10204467194222,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.261</when>
+        <when>2020-01-23T23:12:19.999</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3821,16 +4019,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.261</when>
+        <when>2020-01-23T23:12:19.999</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19453971143332,32.10210847798761,0.0</coordinates>
+        <coordinates>35.19429234328748,32.102214368871465,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.373</when>
+        <when>2020-01-23T23:12:20.125</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3839,16 +4037,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.373</when>
+        <when>2020-01-23T23:12:20.125</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19418451614698,32.10226052643622,0.0</coordinates>
+        <coordinates>35.19388957720387,32.10238678095158,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.477</when>
+        <when>2020-01-23T23:12:20.251</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3857,34 +4055,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.477</when>
+        <when>2020-01-23T23:12:20.251</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19382614947416,32.10241393246026,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:16.583</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:16.583</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.19381366747377,32.102419275630254,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.696</when>
+        <when>2020-01-23T23:12:20.377</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3893,16 +4073,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.696</when>
+        <when>2020-01-23T23:12:20.377</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19290124130269,32.10261923242744,0.0</coordinates>
+        <coordinates>35.192813965755896,32.102638358729784,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.804</when>
+        <when>2020-01-23T23:12:20.503</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3911,16 +4091,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.804</when>
+        <when>2020-01-23T23:12:20.503</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19204435411594,32.10280701794132,0.0</coordinates>
+        <coordinates>35.19181426403802,32.10285744182931,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.909</when>
+        <when>2020-01-23T23:12:20.629</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3929,16 +4109,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:16.910</when>
+        <when>2020-01-23T23:12:20.629</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.19117953278858,32.102996542209965,0.0</coordinates>
+        <coordinates>35.19081456232015,32.10307652492884,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.017</when>
+        <when>2020-01-23T23:12:20.755</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3947,16 +4127,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.018</when>
+        <when>2020-01-23T23:12:20.755</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.1903543821643,32.10317737270481,0.0</coordinates>
+        <coordinates>35.189814860602276,32.10329560802836,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.126</when>
+        <when>2020-01-23T23:12:20.883</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3965,16 +4145,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.127</when>
+        <when>2020-01-23T23:12:20.883</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18949749497755,32.10336515821869,0.0</coordinates>
+        <coordinates>35.18880722474378,32.10351642988265,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.239</when>
+        <when>2020-01-23T23:12:21.010</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -3983,16 +4163,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.240</when>
+        <when>2020-01-23T23:12:21.010</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18860093708771,32.10356163750636,0.0</coordinates>
+        <coordinates>35.18779165474467,32.10373899049169,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.344</when>
+        <when>2020-01-23T23:12:21.136</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4001,34 +4181,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.344</when>
+        <when>2020-01-23T23:12:21.136</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.187704379197875,32.10375811679403,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:17.461</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:17.461</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.187594216303474,32.10378225882353,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.568</when>
+        <when>2020-01-23T23:12:21.262</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4037,16 +4199,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.568</when>
+        <when>2020-01-23T23:12:21.262</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18775884617553,32.10395302059112,0.0</coordinates>
+        <coordinates>35.18776424387625,32.103958619337604,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.676</when>
+        <when>2020-01-23T23:12:21.389</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4055,16 +4217,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.676</when>
+        <when>2020-01-23T23:12:21.389</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18789783696915,32.10409718831294,0.0</coordinates>
+        <coordinates>35.187935620874214,32.104136379538296,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.777</when>
+        <when>2020-01-23T23:12:21.515</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4073,16 +4235,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.777</when>
+        <when>2020-01-23T23:12:21.515</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18804492431386,32.10424975415448,0.0</coordinates>
+        <coordinates>35.18810699787217,32.10431413973899,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.883</when>
+        <when>2020-01-23T23:12:21.641</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4091,16 +4253,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.883</when>
+        <when>2020-01-23T23:12:21.641</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18817716798157,32.10438692344321,0.0</coordinates>
+        <coordinates>35.18827702544495,32.10449050025306,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.995</when>
+        <when>2020-01-23T23:12:21.768</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4109,16 +4271,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:17.995</when>
+        <when>2020-01-23T23:12:21.768</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18832695417664,32.10454228865798,0.0</coordinates>
+        <coordinates>35.188447053017725,32.10466686076713,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.109</when>
+        <when>2020-01-23T23:12:21.894</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4127,16 +4289,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.109</when>
+        <when>2020-01-23T23:12:21.894</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18848213807243,32.10470325261924,0.0</coordinates>
+        <coordinates>35.18861843001569,32.104844620967825,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.222</when>
+        <when>2020-01-23T23:12:22.020</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4145,34 +4307,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.222</when>
+        <when>2020-01-23T23:12:22.021</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18863597254304,32.10486281689388,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:18.332</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:18.332</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.18869800968523,32.104927164705884,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.443</when>
+        <when>2020-01-23T23:12:22.146</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4181,16 +4325,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.444</when>
+        <when>2020-01-23T23:12:22.146</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.188845612159284,32.105213805186935,0.0</coordinates>
+        <coordinates>35.18886406246855,32.10524963524706,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.557</when>
+        <when>2020-01-23T23:12:22.273</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4199,16 +4343,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.557</when>
+        <when>2020-01-23T23:12:22.273</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.188994532512574,32.10550300495799,0.0</coordinates>
+        <coordinates>35.18903011525185,32.10557210578824,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.668</when>
+        <when>2020-01-23T23:12:22.400</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4217,16 +4361,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.669</when>
+        <when>2020-01-23T23:12:22.400</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18914345286586,32.10579220472905,0.0</coordinates>
+        <coordinates>35.1891974859144,32.10589713561943,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.775</when>
+        <when>2020-01-23T23:12:22.526</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4235,16 +4379,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.775</when>
+        <when>2020-01-23T23:12:22.526</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18928314806452,32.10606348947004,0.0</coordinates>
+        <coordinates>35.18936353869771,32.10621960616061,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.887</when>
+        <when>2020-01-23T23:12:22.648</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4253,16 +4397,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.887</when>
+        <when>2020-01-23T23:12:22.648</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18943338629704,32.10635524853111,0.0</coordinates>
+        <coordinates>35.189529591481026,32.10654207670179,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.994</when>
+        <when>2020-01-23T23:12:22.766</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4271,16 +4415,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:18.994</when>
+        <when>2020-01-23T23:12:22.766</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
         <coordinates>35.189568308313156,32.106617263865544,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.103</when>
+        <when>2020-01-23T23:12:22.886</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4289,34 +4433,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.103</when>
+        <when>2020-01-23T23:12:22.886</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18956048572684,32.10677353254589,0.0</coordinates>
+        <coordinates>35.189560136504234,32.10678050882626,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.216</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.216</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18955266314052,32.10692980122623,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.321</when>
+        <when>2020-01-23T23:12:23.013</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4325,34 +4451,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.321</when>
+        <when>2020-01-23T23:12:23.013</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189544980243234,32.10708327939442,0.0</coordinates>
+        <coordinates>35.189551336094624,32.10695631109164,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.427</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.427</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18953785610212,32.10722559551402,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.537</when>
+        <when>2020-01-23T23:12:23.140</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4361,34 +4469,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.538</when>
+        <when>2020-01-23T23:12:23.140</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189530173204844,32.10737907368221,0.0</coordinates>
+        <coordinates>35.18954246584049,32.1071335086131,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.645</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.646</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18952262999661,32.107529761338256,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.755</when>
+        <when>2020-01-23T23:12:23.266</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4397,16 +4487,16 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.755</when>
+        <when>2020-01-23T23:12:23.266</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.189514947099326,32.10768323950644,0.0</coordinates>
+        <coordinates>35.18953359558636,32.10731070613456,0.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.860</when>
+        <when>2020-01-23T23:12:23.393</when>
       </TimeStamp>
       <styleUrl>#fruit_-1</styleUrl>
       <Point>
@@ -4415,551 +4505,11 @@
     </Placemark>
     <Placemark>
       <TimeStamp>
-        <when>2020-01-19T20:11:19.861</when>
+        <when>2020-01-23T23:12:23.393</when>
       </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
+      <styleUrl>#robot</styleUrl>
       <Point>
-        <coordinates>35.18950761342465,32.10782974139427,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.973</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.19157396552351,32.10700824703875,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:19.974</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.18950462792575,32.10788938151261,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.084</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.084</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.1903320501547,32.10753706091921,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.196</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.196</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19117451642418,32.10717833449686,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.306</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.306</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.191994416632866,32.10682921681795,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.410</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.410</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19283688290235,32.106470490395594,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.516</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.517</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19351649233253,32.1061811092437,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.628</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.629</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19414774560415,32.10600686864325,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.742</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.743</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19479027125563,32.10582951660351,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.850</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.850</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.195398979767546,32.105661498881645,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.966</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:20.967</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19605277779887,32.10548103540261,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.077</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.077</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19668966726042,32.10530523908252,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.184</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.185</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197281467202565,32.1051418885196,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.294</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.295</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197400995964486,32.10510889579832,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.406</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.407</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197495030026886,32.10512967162372,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.511</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.512</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197587399769596,32.1051500797354,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.618</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.618</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19767061575402,32.105168465421606,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.731</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.731</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19776464981642,32.10518924124701,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.837</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.838</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197854523079606,32.105209097788105,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.948</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:21.948</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.197945228502626,32.10522913818606,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.058</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.059</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.198038430405184,32.105249730154604,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.163</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.163</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19805902663438,32.10525428067227,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.269</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.269</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19842020664849,32.10532592936227,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.377</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.377</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.198798919673,32.105401056144025,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.486</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.486</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19919165910582,32.10547896539918,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.590</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.591</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.19954933251786,32.105549918470835,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.700</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.700</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.199935058746526,32.10562643648929,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.809</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.810</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20032429157727,32.10570365012609,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.919</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:22.919</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20069949799969,32.10577808128949,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:23.028</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:23.028</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.20109223743252,32.10585599054465,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:23.150</when>
-      </TimeStamp>
-      <styleUrl>#fruit_-1</styleUrl>
-      <Point>
-        <coordinates>35.207763649946,32.10378451816153,0.0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <TimeStamp>
-        <when>2020-01-19T20:11:23.151</when>
-      </TimeStamp>
-      <styleUrl>#robot.png</styleUrl>
-      <Point>
-        <coordinates>35.201456924048706,32.105928334853,0.0</coordinates>
+        <coordinates>35.18952472533223,32.10748790365602,0.0</coordinates>
       </Point>
     </Placemark>
   
